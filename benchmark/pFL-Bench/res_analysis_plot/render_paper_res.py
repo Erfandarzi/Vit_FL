@@ -332,22 +332,22 @@ def load_best_repeat_res(filter_seed_set=None):
                 expname_tag_new = expname_tag
             seed_num = seed.replace("seed", "")
             all_missing_scripts[seed].append(
-<<<<<<< HEAD
+
                 f"python medscale/main.py --cfg scripts/personalization_exp_scripts/pfl_bench/yaml_best_runs/{yaml_name} seed {seed_num} expname_tag {expname_tag_new} wandb.name_project pfl-bench-best-repeat"
-=======
-<<<<<<< HEAD
+
+
                 f"python medscale/main.py --cfg scripts/personalization_exp_scripts/pfl_bench/yaml_best_runs/{yaml_name} seed {seed_num} expname_tag {expname_tag_new} wandb.name_project pfl-bench-best-repeat"
-=======
+
                 f"python medscale/main.py --cfg scripts/personalization_exp_scripts/pfl_bench/yaml_best_runs/{yaml_name} seed {seed_num} expname_tag {expname_tag_new} wandb.name_project pfl-bench-best-repeat"
->>>>>>> fe4962455354c9c11afd9c9806ceda28eb280737
->>>>>>> 64b283ee525ef53c32509882719e74890329b83f
+
+
             )
         elif finished_run_cnt != 1 and print_missing:
             print(f"run_cnt = {finished_run_cnt} for the exp {expname_tag}")
 
     for seed in all_missing_scripts.keys():
         print(
-            f"+================= All MISSING SCRIPTS, seed={seed} =====================+, cnt={len(all_missing_scripts[seed])}"
+            f"+=== All MISSING SCRIPTS, seed={seed} +, cnt={len(all_missing_scripts[seed])}"
         )
         for scipt in all_missing_scripts[seed]:
             print(scipt)
@@ -520,7 +520,7 @@ def print_paper_table_from_repeat(filters_each_line_table):
                     res = "{:.2f}".format(res)
                 res_of_each_line_efficiency[key].append(res)
 
-    print("\n=============res_of_each_line [Generalization]===============" +
+    print("\n======res_of_each_line [Generalization]=" +
           ",".join(list(filters_each_line_table.keys())))
     # Acc, Unseen-ACC, Delta
     res_to_print_matrix = []
@@ -541,7 +541,7 @@ def print_paper_table_from_repeat(filters_each_line_table):
     for res_to_print in res_to_print_matrix:
         print("&".join(res_to_print) + "\\\\")
 
-    print("\n=============res_of_each_line [Fairness]===============" +
+    print("\n======res_of_each_line [Fairness]=" +
           ",".join(list(filters_each_line_table.keys())))
     res_to_print_matrix = []
     for key in expected_method_names:
@@ -563,7 +563,7 @@ def print_paper_table_from_repeat(filters_each_line_table):
     for res_to_print in res_to_print_matrix:
         print("&".join(res_to_print) + "\\\\")
 
-    # print("\n=============res_of_each_line [All Efficiency]===============" + ",".join(
+    # print("\n======res_of_each_line [All Efficiency]=" + ",".join(
     #    list(filters_each_line_table.keys())))
     ## FLOPS, UPLOAD, DOWNLOAD
     # for key in expected_method_names:
@@ -572,7 +572,7 @@ def print_paper_table_from_repeat(filters_each_line_table):
     #    print("&".join(res_to_print) + "\\\\")
 
     print(
-        "\n=============res_of_each_line [flops, communication, acc]==============="
+        "\n======res_of_each_line [flops, communication, acc]="
         + ",".join(list(filters_each_line_table.keys())))
     res_to_print_matrix = []
     for key in expected_method_names:
@@ -604,7 +604,7 @@ def print_paper_table_from_repeat(filters_each_line_table):
         print("&".join(res_to_print) + "\\\\")
 
     print(
-        "\n=============res_of_each_line [converge_round, acc]==============="
+        "\n======res_of_each_line [converge_round, acc]="
         + ",".join(list(filters_each_line_table.keys())))
     res_to_print_matrix = []
     for key in expected_method_names:

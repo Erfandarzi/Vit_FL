@@ -1,10 +1,10 @@
 Auto-tuning Module References
-=======================
+==
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 64b283ee525ef53c32509882719e74890329b83f
+
+
+
+
 medscale.autotune.choice_types
 -----------------------
 
@@ -16,9 +16,9 @@ medscale.autotune.algos
 -----------------------
 
 .. automodule:: medscale.autotune.algos
-<<<<<<< HEAD
-=======
-=======
+
+
+
 medscale.autotune.choice_types
 -----------------------
 
@@ -30,16 +30,16 @@ medscale.autotune.algos
 -----------------------
 
 .. automodule:: medscale.autotune.algos
->>>>>>> fe4962455354c9c11afd9c9806ceda28eb280737
->>>>>>> 64b283ee525ef53c32509882719e74890329b83f
+
+
     :show-inheritance:
     :members:
     :private-members:
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 64b283ee525ef53c32509882719e74890329b83f
+
+
+
+
 medscale.autotune.hpbandster
 -----------------------
 
@@ -58,9 +58,9 @@ medscale.autotune.utils
 -----------------------
 
 .. automodule:: medscale.autotune.utils
-<<<<<<< HEAD
-=======
-=======
+
+
+
 medscale.autotune.hpbandster
 -----------------------
 
@@ -79,7 +79,7 @@ medscale.autotune.utils
 -----------------------
 
 .. automodule:: medscale.autotune.utils
->>>>>>> fe4962455354c9c11afd9c9806ceda28eb280737
->>>>>>> 64b283ee525ef53c32509882719e74890329b83f
+
+
     :members:
     :private-members:

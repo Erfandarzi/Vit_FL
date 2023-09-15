@@ -29,9 +29,9 @@ class BaseClient(Worker):
         Note:
           the default handlers to handle messages and related callback \
           function are shown below:
-            ============================ ==================================
+             ======
             Message type                 Callback function
-            ============================ ==================================
+             ======
             ``assign_client_id``         ``callback_funcs_for_assign_id()``
             ``ask_for_join_in_info``     ``callback_funcs_for_join_in_info()``
             ``address``                  ``callback_funcs_for_address()``
@@ -40,7 +40,7 @@ class BaseClient(Worker):
             ``evaluate``                 ``callback_funcs_for_evaluate()``
             ``finish``                   ``callback_funcs_for_finish()``
             ``converged``                ``callback_funcs_for_converged()``
-            ============================ ==================================
+             ======
         """
         self.register_handlers('assign_client_id',
                                self.callback_funcs_for_assign_id, [None])

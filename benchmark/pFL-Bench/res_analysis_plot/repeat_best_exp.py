@@ -281,7 +281,7 @@ def print_table_datasets_list(filters_each_line_table):
     res_of_all_sweeps = OrderedDict()
     for data_name in filters_each_line_table:
         unseen_keys = copy.copy(expected_keys)
-        print(f"======= processing dataset {data_name}")
+        print(f" processing dataset {data_name}")
         runs_ids = get_sweep_filter_by(data_name, filters_each_line_table)
         for best_run in runs_ids:
             res_all_generalization = []
@@ -289,7 +289,7 @@ def print_table_datasets_list(filters_each_line_table):
             res_all_efficiency = []
             if best_run.state != "finished":
                 print(
-                    f"==================Waring: the best_run with id={best_run} has state {best_run.state}. "
+                    f"====Waring: the best_run with id={best_run} has state {best_run.state}. "
                 )
 
             def remove_a_key(d, remove_key):
@@ -334,7 +334,7 @@ def print_table_datasets_list(filters_each_line_table):
                     continue
                 res_all_generalization.append(res_all_generalization[-1] -
                                               res_all_generalization[-2])
-            # -============== for fairness results ======
+            # - for fairness results ======
             for column_name in column_names_fair:
                 if "global" in run_header:
                     res_all_fair.append("-")
@@ -351,7 +351,7 @@ def print_table_datasets_list(filters_each_line_table):
                         res_all_fair.append("-")
                         wrong_sweep = True
 
-            # -============== for efficiency results ======
+            # - for efficiency results ======
             for column_name in column_names_efficiency:
                 try:
                     res = best_run.summary[column_name]
@@ -447,7 +447,7 @@ def print_table_datasets_list(filters_each_line_table):
                 res_of_each_line_fair[missing_header].extend(["-"] * 3)
                 res_of_each_line_efficiency[missing_header].extend(["-"] * 4)
 
-    print("\n=============res_of_each_line [Generalization]===============" +
+    print("\n======res_of_each_line [Generalization]=" +
           ",".join(list(filters_each_line_table.keys())))
     # Acc, Unseen-ACC, Delta
     for key in sorted_keys:
@@ -457,7 +457,7 @@ def print_table_datasets_list(filters_each_line_table):
         ]
         res_to_print = [sorted_keys[key]] + res_to_print
         print(",".join(res_to_print))
-    print("\n=============res_of_each_line [Fairness]===============" +
+    print("\n======res_of_each_line [Fairness]=" +
           ",".join(list(filters_each_line_table.keys())))
     for key in sorted_keys:
         res_to_print = [
@@ -466,7 +466,7 @@ def print_table_datasets_list(filters_each_line_table):
         ]
         res_to_print = [sorted_keys[key]] + res_to_print
         print(",".join(res_to_print))
-    print("\n=============res_of_each_line [All Efficiency]===============" +
+    print("\n======res_of_each_line [All Efficiency]=" +
           ",".join(list(filters_each_line_table.keys())))
     # FLOPS, UPLOAD, DOWNLOAD
     for key in sorted_keys:
@@ -474,7 +474,7 @@ def print_table_datasets_list(filters_each_line_table):
         res_to_print = [sorted_keys[key]] + res_to_print
         print(",".join(res_to_print))
     print(
-        "\n=============res_of_each_line [flops, communication, acc]==============="
+        "\n======res_of_each_line [flops, communication, acc]="
         + ",".join(list(filters_each_line_table.keys())))
     for key in sorted_keys:
         res_of_each_line_commu_acc_trade[key] = []
@@ -491,7 +491,7 @@ def print_table_datasets_list(filters_each_line_table):
         res_to_print = [sorted_keys[key]] + res_to_print
         print(",".join(res_to_print))
     print(
-        "\n=============res_of_each_line [converge_round, acc]==============="
+        "\n======res_of_each_line [converge_round, acc]="
         + ",".join(list(filters_each_line_table.keys())))
     for key in sorted_keys:
         res_of_each_line_conver_acc_trade[key] = []
@@ -507,7 +507,7 @@ def print_table_datasets_list(filters_each_line_table):
         res_to_print = [str(v) for v in res_of_each_line_conver_acc_trade[key]]
         res_to_print = [sorted_keys[key]] + res_to_print
         print(",".join(res_to_print))
-    # print("\n=============res_of_all_sweeps [Generalization]===============")
+    # print("\n======res_of_all_sweeps [Generalization]=")
     # for key in sorted(res_of_all_sweeps.keys()):
     #     res_to_print = ["{:.2f}".format(v * 100) if v != "-" else v for v in res_of_all_sweeps[key]]
     #     res_to_print = [key] + res_to_print
@@ -530,15 +530,15 @@ def generate_repeat_scripts(best_cfg_path, seed_sets=None):
         method, data = exp_name.split("_")
         for seed in seed_sets:
             print(
-<<<<<<< HEAD
+
                 f"python medscale/main.py --cfg scripts/personalization_exp_scripts/pfl_bench/yaml_best_runs/{file_name} seed {seed} expname_tag {exp_name}_seed{seed} wandb.name_project pfl-bench-best-repeat"
-=======
-<<<<<<< HEAD
+
+
                 f"python medscale/main.py --cfg scripts/personalization_exp_scripts/pfl_bench/yaml_best_runs/{file_name} seed {seed} expname_tag {exp_name}_seed{seed} wandb.name_project pfl-bench-best-repeat"
-=======
+
                 f"python medscale/main.py --cfg scripts/personalization_exp_scripts/pfl_bench/yaml_best_runs/{file_name} seed {seed} expname_tag {exp_name}_seed{seed} wandb.name_project pfl-bench-best-repeat"
->>>>>>> fe4962455354c9c11afd9c9806ceda28eb280737
->>>>>>> 64b283ee525ef53c32509882719e74890329b83f
+
+
             )
             file_cnt += 1
             if file_cnt % 10 == 0:
@@ -548,7 +548,7 @@ def generate_repeat_scripts(best_cfg_path, seed_sets=None):
 
     print(f"Seed={seed_sets}, totally generated {file_cnt} run scripts")
     print(
-        f"=============================== END ===============================")
+        f"=== END ===")
 
 
 def generate_res_table():

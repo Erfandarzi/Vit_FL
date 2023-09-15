@@ -405,7 +405,7 @@ def print_table_datasets_list(filters_each_line_table,
     res_of_all_sweeps = OrderedDict()
     for data_name in filters_each_line_table:
         unseen_keys = copy.copy(expected_keys)
-        print(f"======= processing dataset {data_name}")
+        print(f" processing dataset {data_name}")
         sweep_ids = get_sweep_filter_by(data_name, filters_each_line_table)
         for sweep_id in sweep_ids:
             sweep = api.sweep(f"{name_project}/{sweep_id}")
@@ -418,7 +418,7 @@ def print_table_datasets_list(filters_each_line_table,
             res_all_efficiency = []
             if best_run.state != "finished":
                 print(
-                    f"==================Waring: the best_run with id={best_run} has state {best_run.state}. "
+                    f"====Waring: the best_run with id={best_run} has state {best_run.state}. "
                     f"In weep_id={sweep_id}, sweep_name={run_header}")
             else:
                 print(f"Finding the best_run with id={best_run}. "
@@ -453,7 +453,7 @@ def print_table_datasets_list(filters_each_line_table,
                     continue
                 res_all_generalization.append(res_all_generalization[-1] -
                                               res_all_generalization[-2])
-            # -============== for fairness results ======
+            # - for fairness results ======
             for column_name in column_names_fair:
                 if "global" in run_header:
                     res_all_fair.append("-")
@@ -470,7 +470,7 @@ def print_table_datasets_list(filters_each_line_table,
                         res_all_fair.append("-")
                         wrong_sweep = True
 
-            # -============== for efficiency results ======
+            # - for efficiency results ======
             for column_name in column_names_efficiency:
                 try:
                     res = best_run.summary[column_name]
@@ -607,7 +607,7 @@ def print_table_datasets_list(filters_each_line_table,
                 res_of_each_line_fair[missing_header].extend(["-"] * 3)
                 res_of_each_line_efficiency[missing_header].extend(["-"] * 4)
 
-    print("\n=============res_of_each_line [Generalization]===============" +
+    print("\n======res_of_each_line [Generalization]=" +
           ",".join(list(filters_each_line_table.keys())))
     # Acc, Unseen-ACC, Delta
     res_to_print_matrix = []
@@ -630,7 +630,7 @@ def print_table_datasets_list(filters_each_line_table,
     for res_to_print in res_to_print_matrix:
         print("&".join(res_to_print) + "\\\\")
 
-    print("\n=============res_of_each_line [Fairness]===============" +
+    print("\n======res_of_each_line [Fairness]=" +
           ",".join(list(filters_each_line_table.keys())))
     res_to_print_matrix = []
     for key in sorted_method_name_to_print:
@@ -652,7 +652,7 @@ def print_table_datasets_list(filters_each_line_table,
     for res_to_print in res_to_print_matrix:
         print("&".join(res_to_print) + "\\\\")
 
-    #print("\n=============res_of_each_line [All Efficiency]===============" + ",".join(
+    #print("\n======res_of_each_line [All Efficiency]=" + ",".join(
     #    list(filters_each_line_table.keys())))
     ## FLOPS, UPLOAD, DOWNLOAD
 
@@ -661,7 +661,7 @@ def print_table_datasets_list(filters_each_line_table,
     #    res_to_print = [sorted_method_name_to_print[key]] + res_to_print
     #    print(",".join(res_to_print))
     print(
-        "\n=============res_of_each_line [flops, communication, acc/loss]==============="
+        "\n======res_of_each_line [flops, communication, acc/loss]="
         + ",".join(list(filters_each_line_table.keys())))
     res_to_print_matrix = []
 
@@ -697,7 +697,7 @@ def print_table_datasets_list(filters_each_line_table,
         print("&".join(res_to_print) + "\\\\")
 
     print(
-        "\n=============res_of_each_line [converge_round, acc/loss]==============="
+        "\n======res_of_each_line [converge_round, acc/loss]="
         + ",".join(list(filters_each_line_table.keys())))
     res_to_print_matrix = []
     for key in sorted_method_name_to_print:

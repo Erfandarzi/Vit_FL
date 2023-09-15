@@ -62,11 +62,11 @@ def init_pFedMe_ctx(base_trainer):
 
     Note:
       The modified attributes and according operations are shown below:
-        ==================================  ===========================
+        ======  ======
         Attribute                           Operation
-        ==================================  ===========================
+        ======  ======
         ``ctx.optimizer_for_global_model``  False
-        ==================================  ===========================
+        ======  ======
 
     """
     ctx = base_trainer.ctx
@@ -88,15 +88,15 @@ def _hook_on_fit_start_set_local_para_tmp(ctx):
     """
     Note:
       The modified attributes and according operations are shown below:
-        ==================================  ===========================
+        ======  ======
         Attribute                           Operation
-        ==================================  ===========================
+        ======  ======
         ``ctx.optimizer``                   Wrapped by \
         ``wrap_regularized_optimizer`` and set compared parameter group
         ``ctx.pFedMe_outer_lr``             Initialize to \
         ``ctx.cfg.train.optimizer.lr``
         ``ctx.pFedMe_local_model_tmp``      Copy from ``ctx.model``
-        ==================================  ===========================
+        ======  ======
     """
     # the optimizer used in pFedMe is based on Moreau Envelopes regularization
     # besides, there are two distinct lr for the approximate model and base
@@ -120,12 +120,12 @@ def _hook_on_batch_start_init_pfedme(ctx):
     """
     Note:
       The modified attributes and according operations are shown below:
-        ==================================  ===========================
+        ======  ======
         Attribute                           Operation
-        ==================================  ===========================
+        ======  ======
         ``ctx.data_batch_cache``            Copy from ``ctx.data_batch``
         ``ctx.pFedMe_approx_fit_counter``   Count to refresh data every K step
-        ==================================  ===========================
+        ======  ======
     """
     # refresh data every K step
     if ctx.pFedMe_approx_fit_counter == 0:
@@ -148,11 +148,11 @@ def _hook_on_batch_end_flop_count(ctx):
     """
     Note:
       The modified attributes and according operations are shown below:
-        ==================================  ===========================
+        ======  ======
         Attribute                           Operation
-        ==================================  ===========================
+        ======  ======
         ``ctx.monitor``                     Monitor total flops
-        ==================================  ===========================
+        ======  ======
     """
     # besides the normal forward flops, pFedMe introduces
     # 1) the regularization adds the cost of number of model parameters
@@ -163,11 +163,11 @@ def _hook_on_epoch_end_flop_count(ctx):
     """
     Note:
       The modified attributes and according operations are shown below:
-        ==================================  ===========================
+        ======  ======
         Attribute                           Operation
-        ==================================  ===========================
+        ======  ======
         ``ctx.monitor``                     Monitor total flops
-        ==================================  ===========================
+        ======  ======
     """
     # due to the local weight updating
     ctx.monitor.total_flops += ctx.monitor.total_model_size / 2
@@ -177,13 +177,13 @@ def _hook_on_epoch_end_update_local(ctx):
     """
     Note:
       The modified attributes and according operations are shown below:
-        ==================================  ===========================
+        ======  ======
         Attribute                           Operation
-        ==================================  ===========================
+        ======  ======
         ``ctx.model``                       Update parameters by \
         ``ctx.pFedMe_local_model_tmp``
         ``ctx.optimizer``                   Set compared parameter group
-        ==================================  ===========================
+        ======  ======
     """
     # update local weight after finding approximate theta
     for client_param, local_para_tmp in zip(
@@ -205,13 +205,13 @@ def _hook_on_fit_end_update_local(ctx):
     """
     Note:
       The modified attributes and according operations are shown below:
-        ==================================  ===========================
+        ======  ======
         Attribute                           Operation
-        ==================================  ===========================
+        ======  ======
         ``ctx.model``                       Update parameters by
         ``ctx.pFedMe_local_model_tmp``
         ``ctx.pFedMe_local_model_tmp``      Delete
-        ==================================  ===========================
+        ======  ======
     """
     for param, local_para_tmp in zip(ctx.model.parameters(),
                                      ctx.pFedMe_local_model_tmp.parameters()):

@@ -24,12 +24,12 @@ def get_sampler(sample_strategy='uniform',
 
     Note:
       The key-value pairs of built-in sampler and source are shown below:
-        ===================================  ==============================
+          ==
         Sampling strategy                    Source
-        ===================================  ==============================
+          ==
         ``uniform``                          ``core.sampler.UniformSampler``
         ``group``                            ``core.sampler.GroupSampler``
-        ===================================  ==============================
+          ==
     """
     if sample_strategy == 'uniform':
         return UniformSampler(client_num=client_num)

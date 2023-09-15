@@ -84,11 +84,11 @@ def _hook_record_initialization(ctx):
 
     Note:
       The modified attributes and according operations are shown below:
-        ==================================  ===========================
+        ======  ======
         Attribute                           Operation
-        ==================================  ===========================
+        ======  ======
         ``ctx.weight_init``                 Copy from `ctx.model`
-        ==================================  ===========================
+        ======  ======
     """
     ctx.weight_init = deepcopy(
         [_.data.detach() for _ in ctx.model.parameters()])
@@ -100,11 +100,11 @@ def _hook_del_initialization(ctx):
 
     Note:
       The modified attributes and according operations are shown below:
-        ==================================  ===========================
+        ======  ======
         Attribute                           Operation
-        ==================================  ===========================
+        ======  ======
         ``ctx.weight_init``                 Set to `None`
-        ==================================  ===========================
+        ======  ======
     """
     ctx.weight_init = None
 
@@ -115,11 +115,11 @@ def _hook_inject_noise_in_upload(ctx):
 
     Note:
       The modified attributes and according operations are shown below:
-        ==================================  ===========================
+        ======  ======
         Attribute                           Operation
-        ==================================  ===========================
+        ======  ======
         ``ctx.model``                       Inject noise to parameters
-        ==================================  ===========================
+        ======  ======
     """
     for p in ctx.model.parameters():
         noise = get_random("Normal", p.shape, {

@@ -74,16 +74,16 @@ class GeneralTFTrainer(Trainer):
         """
         Note:
           The modified attributes and according operations are shown below:
-            ==================================  ===========================
+            ======  ======
             Attribute                           Operation
-            ==================================  ===========================
+            ======  ======
             ``ctx.model``                       Move to `ctx.device`
             ``ctx.loss_batch_total``            Initialize to 0
             ``ctx.loss_regular_total``          Initialize to 0
             ``ctx.num_samples``                 Initialize to 0
             ``ctx.ys_true``                     Initialize to ``[]``
             ``ctx.ys_prob``                     Initialize to ``[]``
-            ==================================  ===========================
+            ======  ======
         """
         # prepare model
         ctx.model.to(ctx.device)
@@ -99,11 +99,11 @@ class GeneralTFTrainer(Trainer):
         """
         Note:
           The modified attributes and according operations are shown below:
-            ==================================  ===========================
+            ======  ======
             Attribute                           Operation
-            ==================================  ===========================
+            ======  ======
             ``ctx.{cur_split}_loader``          Initialize DataLoader
-            ==================================  ===========================
+            ======  ======
         """
         # prepare dataloader
         setattr(ctx, "{}_loader".format(ctx.cur_split),
@@ -113,11 +113,11 @@ class GeneralTFTrainer(Trainer):
         """
         Note:
           The modified attributes and according operations are shown below:
-            ==================================  ===========================
+            ======  ======
             Attribute                           Operation
-            ==================================  ===========================
+            ======  ======
             ``ctx.data_batch``                  Initialize batch data
-            ==================================  ===========================
+            ======  ======
         """
         # prepare data batch
         try:
@@ -129,9 +129,9 @@ class GeneralTFTrainer(Trainer):
         """
         Note:
           The modified attributes and according operations are shown below:
-            ==================================  ===========================
+            ======  ======
             Attribute                           Operation
-            ==================================  ===========================
+            ======  ======
             ``ctx.optimizer``                   Initialize optimizer
             ``ctx.batch_size``                  Calculate batch size
             ``ctx.loss_batch``                  Calculate batch loss
@@ -139,7 +139,7 @@ class GeneralTFTrainer(Trainer):
             ``ctx.y_true``                      Get y_true from batch
             ``ctx.y_prob``                      Forward propagation to get \
             `y_prob`
-            ==================================  ===========================
+            ======  ======
         """
         ctx.optimizer = ctx.model.optimizer
 
@@ -171,15 +171,15 @@ class GeneralTFTrainer(Trainer):
         """
         Note:
           The modified attributes and according operations are shown below:
-            ==================================  ===========================
+            ======  ======
             Attribute                           Operation
-            ==================================  ===========================
+            ======  ======
             ``ctx.num_samples``                 Add ``ctx.batch_size``
             ``ctx.loss_batch_total``            Add batch loss
             ``ctx.loss_regular_total``          Add batch regular loss
             ``ctx.ys_true``                     Append ``ctx.y_true``
             ``ctx.ys_prob``                     Append ``ctx.ys_prob``
-            ==================================  ===========================
+            ======  ======
         """
         # TODO: the same with the torch_trainer
         # update statistics
@@ -197,15 +197,15 @@ class GeneralTFTrainer(Trainer):
 
         Note:
           The modified attributes and according operations are shown below:
-            ==================================  ===========================
+            ======  ======
             Attribute                           Operation
-            ==================================  ===========================
+            ======  ======
             ``ctx.ys_true``                     Convert to `numpy.array`
             ``ctx.ys_prob``                     Convert to `numpy.array`
             ``ctx.monitor``                     Evaluate the results
             ``ctx.eval_metrics``                Get evaluated results from \
             ``ctx.monitor``
-            ==================================  ===========================
+            ======  ======
         """
         ctx.ys_true = CtxVar(np.concatenate(ctx.ys_true), LIFECYCLE.ROUTINE)
         ctx.ys_prob = CtxVar(np.concatenate(ctx.ys_prob), LIFECYCLE.ROUTINE)

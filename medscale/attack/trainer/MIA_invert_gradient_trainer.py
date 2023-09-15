@@ -67,7 +67,7 @@ def wrap_GradientAscentTrainer(
 
 def hook_on_fit_start_count_round(ctx):
     ctx.round += 1
-    logger.info("============== round: {} ====================".format(
+    logger.info(" round: {} ======".format(
         ctx.round))
 
 

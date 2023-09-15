@@ -106,8 +106,8 @@ class XGBClient(Client):
 
     def callback_func_for_finish(self, message: Message):
         logger.info(
-            f"================= client {self.ID} received finish message "
-            f"=================")
+            f"=== client {self.ID} received finish message "
+            f"===")
         # self._monitor.finish_fl()
 
     def check_and_move_on(self):

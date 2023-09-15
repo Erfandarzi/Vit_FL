@@ -28,10 +28,10 @@ def get_metric(types):
     Note:
       The key-value pairs of built-in metric and related funcs and \
       ``the_larger_the_better`` sign is shown below:
-        =================  =============================================  =====
+        ===  ===  =====
         Metric name        Source                                         \
         The larger the better
-        =================  =============================================  =====
+        ===  ===  =====
         ``loss``           ``monitors.metric_calculator.eval_loss``       False
         ``avg_loss``       ``monitors.metric_calculator.eval_avg_loss``   False
         ``total``          ``monitors.metric_calculator.eval_total``      False
@@ -46,7 +46,7 @@ def get_metric(types):
         ``imp_ratio``      ``monitors.metric_calculator.eval_imp_ratio``  True
         ``std``            ``None``                                       False
         ``hits@{n}``       ``monitors.metric_calculator.eval_hits``       True
-        =================  =============================================  =====
+        ===  ===  =====
     """
     metrics = dict()
     for func in register.metric_dict.values():

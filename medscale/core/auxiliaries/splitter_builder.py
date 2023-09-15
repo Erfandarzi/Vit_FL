@@ -25,9 +25,9 @@ def get_splitter(config):
 
     Note:
       The key-value pairs of ``cfg.data.splitter`` and domain:
-        ===================  ================================================
+        =====  ======
         Splitter type        Domain
-        ===================  ================================================
+        =====  ======
         lda	                 Generic
         iid                  Generic
         louvain	             Graph (node-level)
@@ -36,7 +36,7 @@ def get_splitter(config):
         scaffold	         Molecular
         scaffold_lda       	 Molecular
         rand_chunk	         Graph (graph-level)
-        ===================  ================================================
+        =====  ======
     """
     client_num = config.federate.client_num
     if config.data.splitter_args:

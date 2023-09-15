@@ -104,7 +104,7 @@ class GeneralMultiModelTrainer(GeneralTorchTrainer):
         """
             init multiple models and optimizers: the default implementation
             is copy init manner;
-            ========================= Extension =============================
+            ==== Extension =
             users can override this function according to their own
             requirements
         """

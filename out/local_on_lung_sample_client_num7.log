@@ -321,15 +321,15 @@ wandb:
 [38;5;39m2023-02-25 00:57:27,341 (fed_runner:221) INFO: Client 8 has been set up ... [0m
 [38;5;39m2023-02-25 00:57:27,497 (fed_runner:221) INFO: Client 9 has been set up ... [0m
 [38;5;39m2023-02-25 00:57:27,643 (fed_runner:221) INFO: Client 10 has been set up ... [0m
-<<<<<<< HEAD
+
 [38;5;39m2023-02-25 00:57:27,643 (trainer:341) INFO: Model meta-info: <class 'medscale.cv.model.cnn.ConvNet5'>.[0m
-=======
-<<<<<<< HEAD
+
+
 [38;5;39m2023-02-25 00:57:27,643 (trainer:341) INFO: Model meta-info: <class 'medscale.cv.model.cnn.ConvNet5'>.[0m
-=======
+
 [38;5;39m2023-02-25 00:57:27,643 (trainer:341) INFO: Model meta-info: <class 'medscale.cv.model.cnn.ConvNet5'>.[0m
->>>>>>> fe4962455354c9c11afd9c9806ceda28eb280737
->>>>>>> 64b283ee525ef53c32509882719e74890329b83f
+
+
 [38;5;39m2023-02-25 00:57:27,643 (trainer:349) INFO: Num of original para names: 39.[0m
 [38;5;39m2023-02-25 00:57:27,643 (trainer:350) INFO: Num of original trainable para names: 24.[0m
 [38;5;39m2023-02-25 00:57:27,644 (trainer:352) INFO: Num of preserved para names in local update: 0. 
@@ -632,25 +632,25 @@ Unsupported operator aten::max_pool2d encountered 5 time(s)
 [38;5;39m2023-02-25 01:00:39,253 (server:540) INFO: {'Role': 'Client #3', 'Round': 10, 'Results_raw': {'test_loss': 27.361732, 'test_acc': 0.0, 'test_f1': 0.0, 'test_correct': 0.0, 'test_avg_loss': 5.472346, 'test_total': 5}}[0m
 [38;5;39m2023-02-25 01:00:39,253 (server:540) INFO: {'Role': 'Client #10', 'Round': 10, 'Results_raw': {'test_acc': 0.809524, 'test_f1': 0.531313, 'test_correct': 17.0, 'test_loss': 12.968079, 'test_avg_loss': 0.617528, 'test_total': 21}}[0m
 [38;5;39m2023-02-25 01:00:39,254 (monitor:172) INFO: In worker #0, the system-related metrics are: {'id': 0, 'fl_end_time_minutes': 3.215196, 'total_model_size': 0, 'total_flops': 0, 'total_upload_bytes': 12800, 'total_download_bytes': 106312, 'global_convergence_round': 0, 'local_convergence_round': 0, 'global_convergence_time_minutes': 0, 'local_convergence_time_minutes': 0}[0m
-[38;5;39m2023-02-25 01:00:39,255 (client:513) INFO: ================= client 1 received finish message =================[0m
+[38;5;39m2023-02-25 01:00:39,255 (client:513) INFO: === client 1 received finish message ===[0m
 [38;5;39m2023-02-25 01:00:39,256 (monitor:172) INFO: In worker #1, the system-related metrics are: {'id': 1, 'fl_end_time_minutes': 3.212354, 'total_model_size': 3260030, 'total_flops': 37161358080.0, 'total_upload_bytes': 10736, 'total_download_bytes': 1280, 'global_convergence_round': 0, 'local_convergence_round': 0, 'global_convergence_time_minutes': 0, 'local_convergence_time_minutes': 0}[0m
-[38;5;39m2023-02-25 01:00:39,257 (client:513) INFO: ================= client 3 received finish message =================[0m
+[38;5;39m2023-02-25 01:00:39,257 (client:513) INFO: === client 3 received finish message ===[0m
 [38;5;39m2023-02-25 01:00:39,259 (monitor:172) INFO: In worker #3, the system-related metrics are: {'id': 3, 'fl_end_time_minutes': 3.2085, 'total_model_size': 3260030, 'total_flops': 710312815872.0, 'total_upload_bytes': 10704, 'total_download_bytes': 1280, 'global_convergence_round': 0, 'local_convergence_round': 9, 'global_convergence_time_minutes': 0, 'local_convergence_time_minutes': 3.1817}[0m
-[38;5;39m2023-02-25 01:00:39,259 (client:513) INFO: ================= client 7 received finish message =================[0m
+[38;5;39m2023-02-25 01:00:39,259 (client:513) INFO: === client 7 received finish message ===[0m
 [38;5;39m2023-02-25 01:00:39,260 (monitor:172) INFO: In worker #7, the system-related metrics are: {'id': 7, 'fl_end_time_minutes': 3.201582, 'total_model_size': 3260030, 'total_flops': 84940247040.0, 'total_upload_bytes': 10736, 'total_download_bytes': 1280, 'global_convergence_round': 0, 'local_convergence_round': 0, 'global_convergence_time_minutes': 0, 'local_convergence_time_minutes': 0}[0m
-[38;5;39m2023-02-25 01:00:39,261 (client:513) INFO: ================= client 10 received finish message =================[0m
+[38;5;39m2023-02-25 01:00:39,261 (client:513) INFO: === client 10 received finish message ===[0m
 [38;5;39m2023-02-25 01:00:39,263 (monitor:172) INFO: In worker #10, the system-related metrics are: {'id': 10, 'fl_end_time_minutes': 3.193854, 'total_model_size': 3260030, 'total_flops': 785697285120.0, 'total_upload_bytes': 10736, 'total_download_bytes': 1280, 'global_convergence_round': 0, 'local_convergence_round': 0, 'global_convergence_time_minutes': 0, 'local_convergence_time_minutes': 0}[0m
-[38;5;39m2023-02-25 01:00:39,263 (client:513) INFO: ================= client 9 received finish message =================[0m
+[38;5;39m2023-02-25 01:00:39,263 (client:513) INFO: === client 9 received finish message ===[0m
 [38;5;39m2023-02-25 01:00:39,265 (monitor:172) INFO: In worker #9, the system-related metrics are: {'id': 9, 'fl_end_time_minutes': 3.196301, 'total_model_size': 3260030, 'total_flops': 19111555584.0, 'total_upload_bytes': 10704, 'total_download_bytes': 1280, 'global_convergence_round': 0, 'local_convergence_round': 9, 'global_convergence_time_minutes': 0, 'local_convergence_time_minutes': 3.098426}[0m
-[38;5;39m2023-02-25 01:00:39,265 (client:513) INFO: ================= client 6 received finish message =================[0m
+[38;5;39m2023-02-25 01:00:39,265 (client:513) INFO: === client 6 received finish message ===[0m
 [38;5;39m2023-02-25 01:00:39,266 (monitor:172) INFO: In worker #6, the system-related metrics are: {'id': 6, 'fl_end_time_minutes': 3.202796, 'total_model_size': 3260030, 'total_flops': 28667333376.0, 'total_upload_bytes': 10704, 'total_download_bytes': 1280, 'global_convergence_round': 0, 'local_convergence_round': 9, 'global_convergence_time_minutes': 0, 'local_convergence_time_minutes': 3.03928}[0m
-[38;5;39m2023-02-25 01:00:39,267 (client:513) INFO: ================= client 8 received finish message =================[0m
+[38;5;39m2023-02-25 01:00:39,267 (client:513) INFO: === client 8 received finish message ===[0m
 [38;5;39m2023-02-25 01:00:39,268 (monitor:172) INFO: In worker #8, the system-related metrics are: {'id': 8, 'fl_end_time_minutes': 3.198947, 'total_model_size': 3260030, 'total_flops': 923725186560.0, 'total_upload_bytes': 10736, 'total_download_bytes': 1280, 'global_convergence_round': 0, 'local_convergence_round': 0, 'global_convergence_time_minutes': 0, 'local_convergence_time_minutes': 0}[0m
-[38;5;39m2023-02-25 01:00:39,269 (client:513) INFO: ================= client 5 received finish message =================[0m
+[38;5;39m2023-02-25 01:00:39,269 (client:513) INFO: === client 5 received finish message ===[0m
 [38;5;39m2023-02-25 01:00:39,270 (monitor:172) INFO: In worker #5, the system-related metrics are: {'id': 5, 'fl_end_time_minutes': 3.205709, 'total_model_size': 3260030, 'total_flops': 875946297600.0, 'total_upload_bytes': 10736, 'total_download_bytes': 1280, 'global_convergence_round': 0, 'local_convergence_round': 0, 'global_convergence_time_minutes': 0, 'local_convergence_time_minutes': 0}[0m
-[38;5;39m2023-02-25 01:00:39,270 (client:513) INFO: ================= client 2 received finish message =================[0m
+[38;5;39m2023-02-25 01:00:39,270 (client:513) INFO: === client 2 received finish message ===[0m
 [38;5;39m2023-02-25 01:00:39,272 (monitor:172) INFO: In worker #2, the system-related metrics are: {'id': 2, 'fl_end_time_minutes': 3.209778, 'total_model_size': 3260030, 'total_flops': 164571728640.0, 'total_upload_bytes': 10736, 'total_download_bytes': 1280, 'global_convergence_round': 0, 'local_convergence_round': 0, 'global_convergence_time_minutes': 0, 'local_convergence_time_minutes': 0}[0m
-[38;5;39m2023-02-25 01:00:39,272 (client:513) INFO: ================= client 4 received finish message =================[0m
+[38;5;39m2023-02-25 01:00:39,272 (client:513) INFO: === client 4 received finish message ===[0m
 [38;5;39m2023-02-25 01:00:39,274 (monitor:172) INFO: In worker #4, the system-related metrics are: {'id': 4, 'fl_end_time_minutes': 3.20632, 'total_model_size': 3260030, 'total_flops': 312155407872.0, 'total_upload_bytes': 10704, 'total_download_bytes': 1280, 'global_convergence_round': 0, 'local_convergence_round': 9, 'global_convergence_time_minutes': 0, 'local_convergence_time_minutes': 3.042643}[0m
 [38;5;39m2023-02-25 01:00:39,274 (monitor:337) INFO: We will compress the file eval_results.raw into a .gz file, and delete the old one[0m
 [38;5;39m2023-02-25 01:00:39,278 (monitor:245) INFO: After merging the system metrics from all works, we got avg: defaultdict(None, {'id': 'sys_avg', 'sys_avg/fl_end_time_minutes': 3.204667, 'sys_avg/total_model_size': '2.83M', 'sys_avg/total_flops': '333.78G', 'sys_avg/total_upload_bytes': '10.66K', 'sys_avg/total_download_bytes': '10.57K', 'sys_avg/global_convergence_round': 0.0, 'sys_avg/local_convergence_round': 3.272727, 'sys_avg/global_convergence_time_minutes': 0.0, 'sys_avg/local_convergence_time_minutes': 1.123823})[0m
@@ -990,15 +990,15 @@ wandb:
 [38;5;39m2023-03-04 18:42:34,451 (fed_runner:221) INFO: Client 8 has been set up ... [0m
 [38;5;39m2023-03-04 18:42:34,600 (fed_runner:221) INFO: Client 9 has been set up ... [0m
 [38;5;39m2023-03-04 18:42:34,750 (fed_runner:221) INFO: Client 10 has been set up ... [0m
-<<<<<<< HEAD
+
 [38;5;39m2023-03-04 18:42:34,750 (trainer:341) INFO: Model meta-info: <class 'medscale.cv.model.cnn.ConvNet5'>.[0m
-=======
-<<<<<<< HEAD
+
+
 [38;5;39m2023-03-04 18:42:34,750 (trainer:341) INFO: Model meta-info: <class 'medscale.cv.model.cnn.ConvNet5'>.[0m
-=======
+
 [38;5;39m2023-03-04 18:42:34,750 (trainer:341) INFO: Model meta-info: <class 'medscale.cv.model.cnn.ConvNet5'>.[0m
->>>>>>> fe4962455354c9c11afd9c9806ceda28eb280737
->>>>>>> 64b283ee525ef53c32509882719e74890329b83f
+
+
 [38;5;39m2023-03-04 18:42:34,751 (trainer:349) INFO: Num of original para names: 39.[0m
 [38;5;39m2023-03-04 18:42:34,751 (trainer:350) INFO: Num of original trainable para names: 24.[0m
 [38;5;39m2023-03-04 18:42:34,751 (trainer:352) INFO: Num of preserved para names in local update: 0. 
@@ -1300,25 +1300,25 @@ Unsupported operator aten::max_pool2d encountered 5 time(s)
 [38;5;39m2023-03-04 18:43:50,960 (server:540) INFO: {'Role': 'Client #3', 'Round': 10, 'Results_raw': {'test_loss': 21.058841, 'test_correct': 0.0, 'test_f1': 0.0, 'test_acc': 0.0, 'test_avg_loss': 4.211768, 'test_total': 5}}[0m
 [38;5;39m2023-03-04 18:43:50,961 (server:540) INFO: {'Role': 'Client #10', 'Round': 10, 'Results_raw': {'test_loss': 13.629495, 'test_correct': 18.0, 'test_f1': 0.55303, 'test_acc': 0.857143, 'test_avg_loss': 0.649024, 'test_total': 21}}[0m
 [38;5;39m2023-03-04 18:43:50,961 (monitor:172) INFO: In worker #0, the system-related metrics are: {'id': 0, 'fl_end_time_minutes': 1.290137, 'total_model_size': 0, 'total_flops': 0, 'total_upload_bytes': 12800, 'total_download_bytes': 106304, 'global_convergence_round': 0, 'local_convergence_round': 0, 'global_convergence_time_minutes': 0, 'local_convergence_time_minutes': 0}[0m
-[38;5;39m2023-03-04 18:43:50,962 (client:513) INFO: ================= client 1 received finish message =================[0m
+[38;5;39m2023-03-04 18:43:50,962 (client:513) INFO: === client 1 received finish message ===[0m
 [38;5;39m2023-03-04 18:43:50,964 (monitor:172) INFO: In worker #1, the system-related metrics are: {'id': 1, 'fl_end_time_minutes': 1.287851, 'total_model_size': 3260030, 'total_flops': 18580679040.0, 'total_upload_bytes': 10736, 'total_download_bytes': 1280, 'global_convergence_round': 0, 'local_convergence_round': 0, 'global_convergence_time_minutes': 0, 'local_convergence_time_minutes': 0}[0m
-[38;5;39m2023-03-04 18:43:50,964 (client:513) INFO: ================= client 3 received finish message =================[0m
+[38;5;39m2023-03-04 18:43:50,964 (client:513) INFO: === client 3 received finish message ===[0m
 [38;5;39m2023-03-04 18:43:50,965 (monitor:172) INFO: In worker #3, the system-related metrics are: {'id': 3, 'fl_end_time_minutes': 1.284353, 'total_model_size': 3260030, 'total_flops': 355156407936.0, 'total_upload_bytes': 10704, 'total_download_bytes': 1280, 'global_convergence_round': 0, 'local_convergence_round': 9, 'global_convergence_time_minutes': 0, 'local_convergence_time_minutes': 1.265786}[0m
-[38;5;39m2023-03-04 18:43:50,966 (client:513) INFO: ================= client 7 received finish message =================[0m
+[38;5;39m2023-03-04 18:43:50,966 (client:513) INFO: === client 7 received finish message ===[0m
 [38;5;39m2023-03-04 18:43:50,967 (monitor:172) INFO: In worker #7, the system-related metrics are: {'id': 7, 'fl_end_time_minutes': 1.277856, 'total_model_size': 3260030, 'total_flops': 42470123520.0, 'total_upload_bytes': 10736, 'total_download_bytes': 1280, 'global_convergence_round': 0, 'local_convergence_round': 0, 'global_convergence_time_minutes': 0, 'local_convergence_time_minutes': 0}[0m
-[38;5;39m2023-03-04 18:43:50,968 (client:513) INFO: ================= client 10 received finish message =================[0m
+[38;5;39m2023-03-04 18:43:50,968 (client:513) INFO: === client 10 received finish message ===[0m
 [38;5;39m2023-03-04 18:43:50,969 (monitor:172) INFO: In worker #10, the system-related metrics are: {'id': 10, 'fl_end_time_minutes': 1.270508, 'total_model_size': 3260030, 'total_flops': 353563778304.0, 'total_upload_bytes': 10728, 'total_download_bytes': 1280, 'global_convergence_round': 0, 'local_convergence_round': 9, 'global_convergence_time_minutes': 0, 'local_convergence_time_minutes': 1.223103}[0m
-[38;5;39m2023-03-04 18:43:50,969 (client:513) INFO: ================= client 9 received finish message =================[0m
+[38;5;39m2023-03-04 18:43:50,969 (client:513) INFO: === client 9 received finish message ===[0m
 [38;5;39m2023-03-04 18:43:50,971 (monitor:172) INFO: In worker #9, the system-related metrics are: {'id': 9, 'fl_end_time_minutes': 1.273027, 'total_model_size': 3260030, 'total_flops': 9555777792.0, 'total_upload_bytes': 10704, 'total_download_bytes': 1280, 'global_convergence_round': 0, 'local_convergence_round': 9, 'global_convergence_time_minutes': 0, 'local_convergence_time_minutes': 1.229949}[0m
-[38;5;39m2023-03-04 18:43:50,971 (client:513) INFO: ================= client 6 received finish message =================[0m
+[38;5;39m2023-03-04 18:43:50,971 (client:513) INFO: === client 6 received finish message ===[0m
 [38;5;39m2023-03-04 18:43:50,973 (monitor:172) INFO: In worker #6, the system-related metrics are: {'id': 6, 'fl_end_time_minutes': 1.279105, 'total_model_size': 3260030, 'total_flops': 14333666688.0, 'total_upload_bytes': 10704, 'total_download_bytes': 1280, 'global_convergence_round': 0, 'local_convergence_round': 9, 'global_convergence_time_minutes': 0, 'local_convergence_time_minutes': 1.231606}[0m
-[38;5;39m2023-03-04 18:43:50,973 (client:513) INFO: ================= client 8 received finish message =================[0m
+[38;5;39m2023-03-04 18:43:50,973 (client:513) INFO: === client 8 received finish message ===[0m
 [38;5;39m2023-03-04 18:43:50,974 (monitor:172) INFO: In worker #8, the system-related metrics are: {'id': 8, 'fl_end_time_minutes': 1.275538, 'total_model_size': 3260030, 'total_flops': 461862593280.0, 'total_upload_bytes': 10736, 'total_download_bytes': 1280, 'global_convergence_round': 0, 'local_convergence_round': 0, 'global_convergence_time_minutes': 0, 'local_convergence_time_minutes': 0}[0m
-[38;5;39m2023-03-04 18:43:50,975 (client:513) INFO: ================= client 5 received finish message =================[0m
+[38;5;39m2023-03-04 18:43:50,975 (client:513) INFO: === client 5 received finish message ===[0m
 [38;5;39m2023-03-04 18:43:50,976 (monitor:172) INFO: In worker #5, the system-related metrics are: {'id': 5, 'fl_end_time_minutes': 1.281674, 'total_model_size': 3260030, 'total_flops': 437973148800.0, 'total_upload_bytes': 10736, 'total_download_bytes': 1280, 'global_convergence_round': 0, 'local_convergence_round': 0, 'global_convergence_time_minutes': 0, 'local_convergence_time_minutes': 0}[0m
-[38;5;39m2023-03-04 18:43:50,976 (client:513) INFO: ================= client 2 received finish message =================[0m
+[38;5;39m2023-03-04 18:43:50,976 (client:513) INFO: === client 2 received finish message ===[0m
 [38;5;39m2023-03-04 18:43:50,978 (monitor:172) INFO: In worker #2, the system-related metrics are: {'id': 2, 'fl_end_time_minutes': 1.28564, 'total_model_size': 3260030, 'total_flops': 82285864320.0, 'total_upload_bytes': 10736, 'total_download_bytes': 1280, 'global_convergence_round': 0, 'local_convergence_round': 0, 'global_convergence_time_minutes': 0, 'local_convergence_time_minutes': 0}[0m
-[38;5;39m2023-03-04 18:43:50,978 (client:513) INFO: ================= client 4 received finish message =================[0m
+[38;5;39m2023-03-04 18:43:50,978 (client:513) INFO: === client 4 received finish message ===[0m
 [38;5;39m2023-03-04 18:43:50,980 (monitor:172) INFO: In worker #4, the system-related metrics are: {'id': 4, 'fl_end_time_minutes': 1.282302, 'total_model_size': 3260030, 'total_flops': 156077703936.0, 'total_upload_bytes': 10704, 'total_download_bytes': 1280, 'global_convergence_round': 0, 'local_convergence_round': 9, 'global_convergence_time_minutes': 0, 'local_convergence_time_minutes': 1.234651}[0m
 [38;5;39m2023-03-04 18:43:50,980 (monitor:337) INFO: We will compress the file eval_results.raw into a .gz file, and delete the old one[0m
 [38;5;39m2023-03-04 18:43:50,984 (monitor:245) INFO: After merging the system metrics from all works, we got avg: defaultdict(None, {'id': 'sys_avg', 'sys_avg/fl_end_time_minutes': 1.280726, 'sys_avg/total_model_size': '2.83M', 'sys_avg/total_flops': '163.56G', 'sys_avg/total_upload_bytes': '10.66K', 'sys_avg/total_download_bytes': '10.57K', 'sys_avg/global_convergence_round': 0.0, 'sys_avg/local_convergence_round': 4.090909, 'sys_avg/global_convergence_time_minutes': 0.0, 'sys_avg/local_convergence_time_minutes': 0.562281})[0m

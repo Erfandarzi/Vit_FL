@@ -59,9 +59,9 @@ def get_trainer(model=None,
 
     Note:
       The key-value pairs of ``cfg.trainer.type`` and trainers:
-        ==================================  ===========================
+        ======  ======
         Trainer Type                        Source
-        ==================================  ===========================
+        ======  ======
         ``general``                         \
         ``core.trainers.GeneralTorchTrainer`` and \
         ``core.trainers.GeneralTFTrainer``
@@ -89,11 +89,11 @@ def get_trainer(model=None,
         ``medscale.mf.trainer.MFTrainer``
         ``mytorchtrainer``                  \
         ``contrib.trainer.torch_example.MyTorchTrainer``
-        ==================================  ===========================
+        ======  ======
       Wrapper functions are shown below:
-        ==================================  ===========================
+        ======  ======
         Wrapper Functions                   Source
-        ==================================  ===========================
+        ======  ======
         ``nbafl``                           \
         ``core.trainers.wrap_nbafl_trainer``
         ``sgdmf``                           ``mf.trainer.wrap_MFTrainer``
@@ -106,7 +106,7 @@ def get_trainer(model=None,
         ``attack``                          \
         ``attack.trainer.wrap_benignTrainer`` and \
         ``attack.auxiliary.attack_trainer_builder.wrap_attacker_trainer``
-        ==================================  ===========================
+        ======  ======
     """
     if config.trainer.type == 'general':
         if config.backend == 'torch':

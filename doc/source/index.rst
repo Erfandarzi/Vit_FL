@@ -4,7 +4,7 @@
    contain the root `toctree` directive.
 
 Welcome to medscale's documentation!
-=====================================
+==
 
 .. raw:: html
 

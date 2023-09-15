@@ -21,9 +21,9 @@ def get_aggregator(method, model=None, device=None, online=False, config=None):
 
     Note:
       The key-value pairs of ``method`` and aggregators:
-        ==================================  ===========================
+        ======  ======
         Method                              Aggregator
-        ==================================  ===========================
+        ======  ======
         ``tensorflow``                      ``cross_backends.FedAvgAggregator``
         ``local``                           \
         ``core.aggregators.NoCommunicationAggregator``
@@ -49,7 +49,7 @@ def get_aggregator(method, model=None, device=None, online=False, config=None):
         ``ClientsAvgAggregator``
         ``fedopt``                          \
         ``core.aggregators.FedOptAggregator``
-        ==================================  ===========================
+        ======  ======
     """
     if config.backend == 'tensorflow':
         from medscale.cross_backends import FedAvgAggregator

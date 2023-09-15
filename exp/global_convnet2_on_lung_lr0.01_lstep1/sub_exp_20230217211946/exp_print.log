@@ -624,15 +624,15 @@ wandb:
   use: False
 2023-02-17 21:19:55,045 (fed_runner:169) INFO: Server has been set up ... 
 2023-02-17 21:19:55,843 (fed_runner:221) INFO: Client 1 has been set up ... 
-<<<<<<< HEAD
+
 2023-02-17 21:19:55,843 (trainer:341) INFO: Model meta-info: <class 'medscale.cv.model.cnn.ConvNet2'>.
-=======
-<<<<<<< HEAD
+
+
 2023-02-17 21:19:55,843 (trainer:341) INFO: Model meta-info: <class 'medscale.cv.model.cnn.ConvNet2'>.
-=======
+
 2023-02-17 21:19:55,843 (trainer:341) INFO: Model meta-info: <class 'medscale.cv.model.cnn.ConvNet2'>.
->>>>>>> fe4962455354c9c11afd9c9806ceda28eb280737
->>>>>>> 64b283ee525ef53c32509882719e74890329b83f
+
+
 2023-02-17 21:19:55,844 (trainer:349) INFO: Num of original para names: 18.
 2023-02-17 21:19:55,844 (trainer:350) INFO: Num of original trainable para names: 12.
 2023-02-17 21:19:55,844 (trainer:352) INFO: Num of preserved para names in local update: 0. 
@@ -752,7 +752,7 @@ Filtered para names in local update: {'bn2.running_var', 'conv2.bias', 'conv2.we
 2023-02-17 21:21:29,516 (server:521) INFO: {'Role': 'Server #', 'Round': 'Final', 'Results_raw': {'client_best_individual': {'test_loss': 34.869263, 'test_correct': 212.0, 'test_avg_loss': 0.158497, 'test_acc': 0.963636, 'test_f1': 0.935011, 'test_total': 220.0}, 'client_summarized_weighted_avg': {'test_loss': 34.869263, 'test_correct': 212.0, 'test_avg_loss': 0.158497, 'test_acc': 0.963636, 'test_f1': 0.935011, 'test_total': 220.0}, 'client_summarized_avg': {'test_loss': 34.869263, 'test_correct': 212.0, 'test_avg_loss': 0.158497, 'test_acc': 0.963636, 'test_f1': 0.935011, 'test_total': 220.0}, 'client_summarized_fairness': {'test_loss': [34.869263], 'test_correct': 212.0, 'test_avg_loss': [0.158497], 'test_acc': [0.963636], 'test_f1': [0.935011], 'test_total': 220.0}}}
 2023-02-17 21:21:29,517 (server:540) INFO: {'Role': 'Client #1', 'Round': 10, 'Results_raw': {'test_correct': 206.0, 'test_avg_loss': 0.180709, 'test_acc': 0.936364, 'test_f1': 0.880289, 'test_loss': 39.755994, 'test_total': 220}}
 2023-02-17 21:21:29,517 (monitor:172) INFO: In worker #0, the system-related metrics are: {'id': 0, 'fl_end_time_minutes': 1.574559, 'total_model_size': 0, 'total_flops': 0, 'total_upload_bytes': 1280, 'total_download_bytes': 9816, 'global_convergence_round': 0, 'local_convergence_round': 0, 'global_convergence_time_minutes': 0, 'local_convergence_time_minutes': 0}
-2023-02-17 21:21:29,518 (client:513) INFO: ================= client 1 received finish message =================
+2023-02-17 21:21:29,518 (client:513) INFO: === client 1 received finish message ===
 2023-02-17 21:21:29,538 (monitor:172) INFO: In worker #1, the system-related metrics are: {'id': 1, 'fl_end_time_minutes': 1.565538, 'total_model_size': 82102974, 'total_flops': 2073639979520.0, 'total_upload_bytes': 10736, 'total_download_bytes': 1280, 'global_convergence_round': 0, 'local_convergence_round': 0, 'global_convergence_time_minutes': 0, 'local_convergence_time_minutes': 0}
 2023-02-17 21:21:29,539 (monitor:337) INFO: We will compress the file eval_results.raw into a .gz file, and delete the old one
 2023-02-17 21:21:29,540 (monitor:245) INFO: After merging the system metrics from all works, we got avg: defaultdict(None, {'id': 'sys_avg', 'sys_avg/fl_end_time_minutes': 1.570049, 'sys_avg/total_model_size': '39.15M', 'sys_avg/total_flops': '965.61G', 'sys_avg/total_upload_bytes': '5.87K', 'sys_avg/total_download_bytes': '5.42K', 'sys_avg/global_convergence_round': 0.0, 'sys_avg/local_convergence_round': 0.0, 'sys_avg/global_convergence_time_minutes': 0.0, 'sys_avg/local_convergence_time_minutes': 0.0})

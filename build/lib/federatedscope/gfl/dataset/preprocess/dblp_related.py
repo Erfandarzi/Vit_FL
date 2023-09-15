@@ -130,7 +130,7 @@ def extract_considered():
     'ECIR': 1482, 'ICML': 8322, 'CIKM': 5931, 'WWW': 5553, 'CVPR': 13355,
     'EDBT': 1636, 'AAAI': 9695, 'ECML': 2216, 'SIGMOD': 4206, 'ICDE': 4330,
     'PODS': 1670, 'SDM': 1624, 'SIGIR': 4619, 'WSDM': 746, 'PKDD': 547}
-    ======================
+    =
     {'IEEE': 22274, 'ACM': 28201, 'the IJCAI, Inc.': 7586, 'VLDB': 5314,
     'Springer': 8123, 'PMLR': 8322, 'AAAI': 9695, 'SIAM': 1624}
 """
@@ -171,7 +171,7 @@ def be_canonical():
     ops.close()
 
     print(conf_cnts)
-    print("======================")
+    print("=")
     print(org_cnts)
 
 

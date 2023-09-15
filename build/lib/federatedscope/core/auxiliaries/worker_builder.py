@@ -26,9 +26,9 @@ def get_client_cls(cfg):
 
     Note:
       The key-value pairs of client type and source:
-        ==================== ==============================================
+        ====== ====
         Client type          Source
-        ==================== ==============================================
+        ====== ====
         ``local``            ``core.workers.Client``
         ``fedavg``           ``core.workers.Client``
         ``pfedme``           ``core.workers.Client``
@@ -39,7 +39,7 @@ def get_client_cls(cfg):
         ``gcflplus``         ``gfl.gcflplus.worker.GCFLPlusClient``
         ``gradascent``       \
         ``attack.worker_as_attacker.active_client``
-        ==================== ==============================================
+        ====== ====
     """
     for func in register.worker_dict.values():
         worker_class = func(cfg.federate.method.lower())
@@ -95,7 +95,7 @@ def get_client_cls(cfg):
     if client_atk_type == 'gradascent':
         from medscale.attack.worker_as_attacker.active_client import \
             add_atk_method_to_Client_GradAscent
-        logger.info("=========== add method to current client class ")
+        logger.info("==== add method to current client class ")
         client_class = add_atk_method_to_Client_GradAscent(client_class)
     return client_class
 
@@ -112,9 +112,9 @@ def get_server_cls(cfg):
 
     Note:
       The key-value pairs of server type and source:
-        ==================== ==============================================
+        ====== ====
         Server type          Source
-        ==================== ==============================================
+        ====== ====
         ``local``            ``core.workers.Server``
         ``fedavg``           ``core.workers.Server``
         ``pfedme``           ``core.workers.Server``
@@ -128,7 +128,7 @@ def get_server_cls(cfg):
         ``attack.worker_as_attacker.server_attacker.PassivePIAServer``
         ``backdoor``         \
         ``attack.worker_as_attacker.server_attacker.BackdoorServer``
-        ==================== ==============================================
+        ====== ====
     """
     for func in register.worker_dict.values():
         worker_class = func(cfg.federate.method.lower())

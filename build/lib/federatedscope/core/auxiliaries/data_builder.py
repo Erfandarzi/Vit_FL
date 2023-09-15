@@ -47,9 +47,9 @@ def get_data(config, client_cfgs=None):
 
     Note:
       The available ``data.type`` is shown below:
-        ==================================  ===========================
+        ======  ======
         Data type                           Domain
-        ==================================  ===========================
+        ======  ======
         FEMNIST	                            CV
         Celeba	                            CV
         ``${DNAME}@torchvision``	        CV
@@ -110,7 +110,7 @@ def get_data(config, client_cfgs=None):
         HFLMovieLens10M	                    Recommendation
         VFLNetflix	                        Recommendation
         HFLNetflix	                        Recommendation
-        ==================================  ===========================
+        ======  ======
     """
     # Fix the seed for data generation
     setup_seed(12345)

@@ -110,11 +110,11 @@ class FedEMTrainer(GeneralMultiModelTrainer):
         """
         Note:
           The modified attributes and according operations are shown below:
-            ==================================  ===========================
+            ======  ======
             Attribute                           Operation
-            ==================================  ===========================
+            ======  ======
             ``ctx.optimizer_for_global_model``  False
-            ==================================  ===========================
+            ======  ======
         """
         # for both train & eval
         ctx.cur_batch_idx = (self.ctx.cur_batch_idx +
@@ -124,12 +124,12 @@ class FedEMTrainer(GeneralMultiModelTrainer):
         """
         Note:
           The modified attributes and according operations are shown below:
-            ==================================  ===========================
+            ======  ======
             Attribute                           Operation
-            ==================================  ===========================
+            ======  ======
             ``ctx.loss_batch``                  Multiply by \
             ``weights_internal_models``
-            ==================================  ===========================
+            ======  ======
         """
         # for only train
         ctx.loss_batch *= self.weights_internal_models[ctx.cur_model_idx]
@@ -138,11 +138,11 @@ class FedEMTrainer(GeneralMultiModelTrainer):
         """
         Note:
           The modified attributes and according operations are shown below:
-            ==================================  ===========================
+            ======  ======
             Attribute                           Operation
-            ==================================  ===========================
+            ======  ======
             ``ctx.all_losses_model_batch``      Gather loss
-            ==================================  ===========================
+            ======  ======
         """
         # for only eval
         # before clean the loss_batch; we record it
@@ -154,11 +154,11 @@ class FedEMTrainer(GeneralMultiModelTrainer):
         """
         Note:
           The modified attributes and according operations are shown below:
-            ==================================  ===========================
+            ======  ======
             Attribute                           Operation
-            ==================================  ===========================
+            ======  ======
             ``ctx.mode``                        Evaluate
-            ==================================  ===========================
+            ======  ======
         """
         # for only train
         if ctx.cur_model_idx != 0:
@@ -184,11 +184,11 @@ class FedEMTrainer(GeneralMultiModelTrainer):
         """
         Note:
           The modified attributes and according operations are shown below:
-            ==================================  ===========================
+            ======  ======
             Attribute                           Operation
-            ==================================  ===========================
+            ======  ======
             ``ctx.monitor``                     Count total_flops
-            ==================================  ===========================
+            ======  ======
         """
         self.ctx.monitor.total_flops += self.ctx.monitor.flops_per_sample * \
             self.model_nums * ctx.num_train_data
@@ -197,11 +197,11 @@ class FedEMTrainer(GeneralMultiModelTrainer):
         """
         Note:
           The modified attributes and according operations are shown below:
-            ==================================  ===========================
+            ======  ======
             Attribute                           Operation
-            ==================================  ===========================
+            ======  ======
             ``ctx.monitor``                     Count total_flops
-            ==================================  ===========================
+            ======  ======
         """
         self.ctx.monitor.total_flops += self.ctx.monitor.flops_per_sample * \
             self.model_nums * ctx.num_train_data
@@ -212,15 +212,15 @@ class FedEMTrainer(GeneralMultiModelTrainer):
 
         Note:
           The modified attributes and according operations are shown below:
-            ==================================  ===========================
+            ======  ======
             Attribute                           Operation
-            ==================================  ===========================
+            ======  ======
             ``ctx.ys_prob_ensemble``            Ensemble ys_prob
             ``ctx.ys_true``                     Concatenate results
             ``ctx.ys_prob``                     Concatenate results
             ``ctx.eval_metrics``                Get evaluated results from \
             ``ctx.monitor``
-            ==================================  ===========================
+            ======  ======
         """
         if ctx.get("ys_prob_ensemble", None) is None:
             ctx.ys_prob_ensemble = CtxVar(0, LIFECYCLE.ROUTINE)

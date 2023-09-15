@@ -91,9 +91,9 @@ class MyWorker(Worker):
                                         desc=self.cfg.hpo.larger_better,
                                         use_wandb=self.cfg.wandb.use)
         logger.info(
-            "========================== HPO Final ==========================")
+            "===== HPO Final =====")
         logger.info("\n{}".format(results))
-        logger.info("====================================================")
+        logger.info("===")
 
         return results
 

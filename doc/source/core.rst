@@ -1,10 +1,10 @@
 Core Module References
-=======================
+==
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 64b283ee525ef53c32509882719e74890329b83f
+
+
+
+
 medscale.core.fed_runner
 -----------------------
 
@@ -57,9 +57,9 @@ medscale.core.configs
 -----------------------
 
 .. automodule:: medscale.core.configs
-<<<<<<< HEAD
-=======
-=======
+
+
+
 medscale.core.fed_runner
 -----------------------
 
@@ -112,16 +112,16 @@ medscale.core.configs
 -----------------------
 
 .. automodule:: medscale.core.configs
->>>>>>> fe4962455354c9c11afd9c9806ceda28eb280737
->>>>>>> 64b283ee525ef53c32509882719e74890329b83f
+
+
     :members:
     :private-members:
 
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 64b283ee525ef53c32509882719e74890329b83f
+
+
+
+
 medscale.core.monitors
 -----------------------
 
@@ -154,9 +154,9 @@ medscale.core.auxiliaries
 .. autofunction:: medscale.core.auxiliaries.transform_builder.get_transform()
 .. autofunction:: medscale.core.auxiliaries.worker_builder.get_client_cls()
 .. autofunction:: medscale.core.auxiliaries.worker_builder.get_server_cls()
-<<<<<<< HEAD
-=======
-=======
+
+
+
 medscale.core.monitors
 -----------------------
 
@@ -189,5 +189,5 @@ medscale.core.auxiliaries
 .. autofunction:: medscale.core.auxiliaries.transform_builder.get_transform()
 .. autofunction:: medscale.core.auxiliaries.worker_builder.get_client_cls()
 .. autofunction:: medscale.core.auxiliaries.worker_builder.get_server_cls()
->>>>>>> fe4962455354c9c11afd9c9806ceda28eb280737
->>>>>>> 64b283ee525ef53c32509882719e74890329b83f
+
+

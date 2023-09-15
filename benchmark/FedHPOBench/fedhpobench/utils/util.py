@@ -23,15 +23,15 @@ def merge_dict(dict1, dict2):
 
 def disable_fs_logger(cfg, clear_before_add=False):
     # Disable FS logger
-<<<<<<< HEAD
+
     root_logger = logging.getLogger("medscale")
-=======
-<<<<<<< HEAD
+
+
     root_logger = logging.getLogger("medscale")
-=======
+
     root_logger = logging.getLogger("medscale")
->>>>>>> fe4962455354c9c11afd9c9806ceda28eb280737
->>>>>>> 64b283ee525ef53c32509882719e74890329b83f
+
+
     # clear all existing handlers and add the default stream
     if clear_before_add:
         root_logger.handlers = []
@@ -43,7 +43,7 @@ def disable_fs_logger(cfg, clear_before_add=False):
 
     root_logger.setLevel(logging.CRITICAL)
 
-    # ================ create outdir to save log, exp_config, models, etc,.
+    # == create outdir to save log, exp_config, models, etc,.
     if cfg.outdir == "":
         cfg.outdir = os.path.join(os.getcwd(), "exp")
     cfg.outdir = os.path.join(cfg.outdir, cfg.expname)

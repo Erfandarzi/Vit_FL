@@ -2,17 +2,9 @@ from __future__ import absolute_import, division, print_function
 
 import setuptools
 
-<<<<<<< HEAD
 __name__ = 'medscale'
-=======
-<<<<<<< HEAD
-__name__ = 'medscale'
-=======
-__name__ = 'medscale'
->>>>>>> fe4962455354c9c11afd9c9806ceda28eb280737
->>>>>>> 64b283ee525ef53c32509882719e74890329b83f
 __version__ = '0.2.1'
-URL = 'https://github.com/alibaba/medscale'
+URL = 'https://github.com/Erfandarzi/Vit_FL'
 
 minimal_requires = [
     'numpy<1.23.0', 'scikit-learn==1.0.2', 'scipy==1.7.3', 'pandas',
@@ -48,8 +40,8 @@ with open("README.md", "r") as fh:
 setuptools.setup(
     name=__name__,
     version=__version__,
-    author="Alibaba Damo Academy",
-    author_email="jones.wz@alibaba-inc.com",
+    author="Erfan",
+    author_email="Erfansooper",
     description="Federated learning package",
     long_description=long_description,
     long_description_content_type="text/markdown",

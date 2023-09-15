@@ -108,9 +108,9 @@ def get_model(model_config, local_data=None, backend='torch'):
 
     Note:
       The key-value pairs of built-in model and source are shown below:
-        ===================================  ==============================
+          ==
         Model type                           Source
-        ===================================  ==============================
+          ==
         ``lr``                               ``core.lr.LogisticRegression`` \
         or ``cross_backends.LogisticRegression``
         ``mlp``                              ``core.mlp.MLP``
@@ -121,7 +121,7 @@ def get_model(model_config, local_data=None, backend='torch'):
         ``gcn, sage, gpr, gat, gin, mpnn``   ``gfl.model.get_gnn()``
         ``vmfnet, hmfnet``                   \
         ``mf.model.model_builder.get_mfnet()``
-        ===================================  ==============================
+          ==
     """
 
     if local_data is not None:

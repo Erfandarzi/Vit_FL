@@ -24,9 +24,9 @@ def get_dataloader(dataset, config, split='train'):
 
     Note:
       The key-value pairs of ``dataloader.type`` and ``DataLoader``:
-        ========================  ===============================
+        ===  ===
         ``dataloader.type``       Source
-        ========================  ===============================
+        ===  ===
         ``raw``                   No DataLoader
         ``base``                  ``torch.utils.data.DataLoader``
         ``pyg``                   ``torch_geometric.loader.DataLoader``
@@ -34,7 +34,7 @@ def get_dataloader(dataset, config, split='train'):
         ``torch_geometric.loader.GraphSAINTRandomWalkSampler``
         ``neighbor``              ``torch_geometric.loader.NeighborSampler``
         ``mf``                    ``medscale.mf.dataloader.MFDataLoader``
-        ========================  ===============================
+        ===  ===
     """
     # DataLoader builder only support torch backend now.
     if config.backend != 'torch':

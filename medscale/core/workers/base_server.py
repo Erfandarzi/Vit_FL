@@ -29,14 +29,14 @@ class BaseServer(Worker):
         Note:
           the default handlers to handle messages and related callback \
           function are shown below:
-            ============================ ==================================
+             ======
             Message type                 Callback function
-            ============================ ==================================
+             ======
             ``join_in``                  ``callback_funcs_for_join_in()``
             ``join_in_info``             ``callback_funcs_for_join_in()``
             ``model_para``               ``callback_funcs_model_para()``
             ``metrics``                  ``callback_funcs_for_metrics``
-            ============================ ==================================
+             ======
         """
         self.register_handlers('join_in', self.callback_funcs_for_join_in, [
             'assign_client_id', 'ask_for_join_in_info', 'address', 'model_para'

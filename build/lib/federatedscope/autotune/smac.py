@@ -45,9 +45,9 @@ def run_smac(cfg, scheduler, client_cfgs=None):
                                         desc=cfg.hpo.larger_better,
                                         use_wandb=cfg.wandb.use)
         logger.info(
-            "========================== HPO Final ==========================")
+            "===== HPO Final =====")
         logger.info("\n{}".format(results))
-        logger.info("====================================================")
+        logger.info("===")
 
         return perfs
 

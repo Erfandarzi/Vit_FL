@@ -1,10 +1,10 @@
 Federated Computer Vision  Module References
-=======================
+==
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 64b283ee525ef53c32509882719e74890329b83f
+
+
+
+
 medscale.cv.dataset
 -----------------------
 
@@ -34,9 +34,9 @@ medscale.cv.trainer
 -----------------------
 
 .. automodule:: medscale.cv.trainer
-<<<<<<< HEAD
-=======
-=======
+
+
+
 medscale.cv.dataset
 -----------------------
 
@@ -66,7 +66,7 @@ medscale.cv.trainer
 -----------------------
 
 .. automodule:: medscale.cv.trainer
->>>>>>> fe4962455354c9c11afd9c9806ceda28eb280737
->>>>>>> 64b283ee525ef53c32509882719e74890329b83f
+
+
     :members:
     :private-members:

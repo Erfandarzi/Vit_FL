@@ -48,10 +48,10 @@ class MetricCalculator(object):
         Note:
           The key-value pairs of built-in metric and related funcs and \
           ``the_larger_the_better`` sign is shown below:
-            =================  =============================================  =
+            ===  ===  =
             Metric name        Source                                         \
             The larger the better
-            =================  =============================================  =
+            ===  ===  =
             ``loss``           ``monitors.metric_calculator.eval_loss``       \
             False
             ``avg_loss``       ``monitors.metric_calculator.eval_avg_loss``   \
@@ -80,7 +80,7 @@ class MetricCalculator(object):
             False
             ``hits@{n}``       ``monitors.metric_calculator.eval_hits``       \
             True
-            =================  =============================================  =
+            ===  ===  =
         """
         metric_buildin = {
             metric: SUPPORT_METRICS[metric]

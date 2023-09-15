@@ -511,8 +511,8 @@ class Client(BaseClient):
             message: The received message
         """
         logger.info(
-            f"================= client {self.ID} received finish message "
-            f"=================")
+            f"=== client {self.ID} received finish message "
+            f"===")
 
         if message.content is not None:
             self.trainer.update(message.content,

@@ -88,7 +88,7 @@ def assert_fl_setting_cfg(cfg):
         f"Please specify the cfg.federate.mode as the string standalone or " \
         f"distributed. But got {cfg.federate.mode}."
 
-    # =============  client num related  ==============
+    # ======  client num related  
     assert not (cfg.federate.client_num == 0
                 and cfg.federate.mode == 'distributed'
                 ), "Please configure the cfg.federate. in distributed mode. "
@@ -169,7 +169,7 @@ def assert_fl_setting_cfg(cfg):
         assert cfg.federate.method != "local", \
             "Secret sharing is not supported in local training mode"
 
-    # =============   aggregator related   ================
+    # ======   aggregator related   ==
     assert (not cfg.federate.online_aggr) or (
         not cfg.federate.use_ss
     ), "Have not supported to use online aggregator and secrete sharing at " \

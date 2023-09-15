@@ -1,10 +1,10 @@
 Federated Natural Language Processing  Module References
-=======================
+==
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 64b283ee525ef53c32509882719e74890329b83f
+
+
+
+
 medscale.nlp.dataset
 -----------------------
 
@@ -30,9 +30,9 @@ medscale.nlp.trainer
 -----------------------
 
 .. automodule:: medscale.nlp.trainer
-<<<<<<< HEAD
-=======
-=======
+
+
+
 medscale.nlp.dataset
 -----------------------
 
@@ -58,7 +58,7 @@ medscale.nlp.trainer
 -----------------------
 
 .. automodule:: medscale.nlp.trainer
->>>>>>> fe4962455354c9c11afd9c9806ceda28eb280737
->>>>>>> 64b283ee525ef53c32509882719e74890329b83f
+
+
     :members:
     :private-members:

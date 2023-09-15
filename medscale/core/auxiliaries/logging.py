@@ -77,7 +77,7 @@ def update_logger(cfg, clear_before_add=False):
         root_logger.warning("Skip DEBUG/INFO messages")
     root_logger.setLevel(logging_level)
 
-    # ================ create outdir to save log, exp_config, models, etc,.
+    # == create outdir to save log, exp_config, models, etc,.
     if cfg.outdir == "":
         cfg.outdir = os.path.join(os.getcwd(), "exp")
     if cfg.expname == "":

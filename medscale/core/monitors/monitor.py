@@ -70,7 +70,7 @@ class Monitor(object):
         self.the_larger_the_better = self.metric_calculator.eval_metric[
             update_key][1]
 
-        # =======  efficiency indicators of the worker to be monitored =======
+        #   efficiency indicators of the worker to be monitored 
         # leveraged the flops counter provided by [fvcore](
         # https://github.com/facebookresearch/fvcore)
         self.total_model_size = 0  # model size used in the worker, in terms

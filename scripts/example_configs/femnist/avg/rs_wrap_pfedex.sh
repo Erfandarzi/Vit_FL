@@ -1,10 +1,10 @@
 set -e
 
 # best choice is hpo.fedex.pi_lr 0.01 hpo.fedex.diff False
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 64b283ee525ef53c32509882719e74890329b83f
+
+
+
+
 python medscale/hpo.py --cfg scripts/example_configs/femnist/avg/rs_wrap.yaml hpo.fedex.psn True hpo.fedex.pi_lr 1.0 device 0 hpo.fedex.diff False hpo.working_folder rs_wrap_pfedex_0 >rs_wrap_pfedex_0.out 2>rs_wrap_pfedex_0.err &
 python medscale/hpo.py --cfg scripts/example_configs/femnist/avg/rs_wrap.yaml hpo.fedex.psn True hpo.fedex.pi_lr 0.1 device 1 hpo.fedex.diff False hpo.working_folder rs_wrap_pfedex_1 >rs_wrap_pfedex_1.out 2>rs_wrap_pfedex_1.err &
 python medscale/hpo.py --cfg scripts/example_configs/femnist/avg/rs_wrap.yaml hpo.fedex.psn True hpo.fedex.pi_lr 0.01 device 2 hpo.fedex.diff False hpo.working_folder rs_wrap_pfedex_2 >rs_wrap_pfedex_2.out 2>rs_wrap_pfedex_2.err &
@@ -26,9 +26,9 @@ python medscale/hpo.py --cfg scripts/example_configs/femnist/avg/rs_wrap.yaml hp
 #CUDA_VISIBLE_DEVICES="0" python medscale/main.py --cfg scripts/example_configs/femnist/avg/learn_from_scratch.yaml --client_cfg rs_wrap_pfedex_0/clientwise_config.yaml expname opt0_lfs_exp device 0 >/dev/null 2>/dev/null &
 #CUDA_VISIBLE_DEVICES="1" python medscale/main.py --cfg scripts/example_configs/femnist/avg/learn_from_scratch.yaml --client_cfg rs_wrap_pfedex_1/clientwise_config.yaml expname opt1_lfs_exp device 0 >/dev/null 2>/dev/null &
 #CUDA_VISIBLE_DEVICES="2" python medscale/main.py --cfg scripts/example_configs/femnist/avg/learn_from_scratch.yaml --client_cfg rs_wrap_pfedex_2/clientwise_config.yaml expname opt2_lfs_exp device 0 >/dev/null 2>/dev/null &
-<<<<<<< HEAD
-=======
-=======
+
+
+
 python medscale/hpo.py --cfg scripts/example_configs/femnist/avg/rs_wrap.yaml hpo.fedex.psn True hpo.fedex.pi_lr 1.0 device 0 hpo.fedex.diff False hpo.working_folder rs_wrap_pfedex_0 >rs_wrap_pfedex_0.out 2>rs_wrap_pfedex_0.err &
 python medscale/hpo.py --cfg scripts/example_configs/femnist/avg/rs_wrap.yaml hpo.fedex.psn True hpo.fedex.pi_lr 0.1 device 1 hpo.fedex.diff False hpo.working_folder rs_wrap_pfedex_1 >rs_wrap_pfedex_1.out 2>rs_wrap_pfedex_1.err &
 python medscale/hpo.py --cfg scripts/example_configs/femnist/avg/rs_wrap.yaml hpo.fedex.psn True hpo.fedex.pi_lr 0.01 device 2 hpo.fedex.diff False hpo.working_folder rs_wrap_pfedex_2 >rs_wrap_pfedex_2.out 2>rs_wrap_pfedex_2.err &
@@ -50,8 +50,8 @@ python medscale/hpo.py --cfg scripts/example_configs/femnist/avg/rs_wrap.yaml hp
 #CUDA_VISIBLE_DEVICES="0" python medscale/main.py --cfg scripts/example_configs/femnist/avg/learn_from_scratch.yaml --client_cfg rs_wrap_pfedex_0/clientwise_config.yaml expname opt0_lfs_exp device 0 >/dev/null 2>/dev/null &
 #CUDA_VISIBLE_DEVICES="1" python medscale/main.py --cfg scripts/example_configs/femnist/avg/learn_from_scratch.yaml --client_cfg rs_wrap_pfedex_1/clientwise_config.yaml expname opt1_lfs_exp device 0 >/dev/null 2>/dev/null &
 #CUDA_VISIBLE_DEVICES="2" python medscale/main.py --cfg scripts/example_configs/femnist/avg/learn_from_scratch.yaml --client_cfg rs_wrap_pfedex_2/clientwise_config.yaml expname opt2_lfs_exp device 0 >/dev/null 2>/dev/null &
->>>>>>> fe4962455354c9c11afd9c9806ceda28eb280737
->>>>>>> 64b283ee525ef53c32509882719e74890329b83f
+
+
 
 # results
 # 0.7190350102971462 + 0.8758458370108856 + 0.8615769343924684

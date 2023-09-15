@@ -160,7 +160,7 @@ class PassivePropertyInference():
         from sklearn.metrics import accuracy_score
         accuracy = accuracy_score(y_true=y_test, y_pred=y_pred)
         logger.info(
-            '=============== PIA accuracy on auxiliary test dataset: {}'.
+            '= PIA accuracy on auxiliary test dataset: {}'.
             format(accuracy))
 
     def property_inference(self, parameter_updates):
