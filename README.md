@@ -1,7 +1,7 @@
 <!-- <h1 align="center" style = font-size: 200px>MedScale</h1> -->
-<h1 align="center">
+<!-- <h1 align="center">
     <img src="doc/MS.png" width="300"   overflow= "hidden" alt="medscale-logo">
-</h1> 
+</h1>  -->
  
 ![](https://img.shields.io/badge/language-python-blue.svg)
 ![](https://img.shields.io/badge/license-Apache-000000.svg)
@@ -18,9 +18,7 @@ First of all, users need to clone the source code and install the required packa
 
 ```bash
 git clone https://github.com/erfandarzi/Vit_FL.git
-
-
-cd medscale
+cd Vit_FL
 ```
 
 #### Use Conda
@@ -59,7 +57,7 @@ Now, you have successfully installed the minimal version of our repository. (**O
 
 ### Downloading Lung cancer dataset📋
 
-You can download lung cancer dataset from kaggle and put it in `dataset/lung`  directory.
+You can download lung cancer dataset from kaggle and put it in `data/lung`  directory.
 
 
  
