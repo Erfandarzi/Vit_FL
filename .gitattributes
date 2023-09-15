@@ -1,0 +1,4 @@
+data/femnist/raw/all_data/*.json filter=lfs diff=lfs merge=lfs -text
+*.json filter=lfs diff=lfs merge=lfs -text
+data/femnist/raw/*.json filter=lfs diff=lfs merge=lfs -text
+data/MRI/*.zip filter=lfs diff=lfs merge=lfs -text

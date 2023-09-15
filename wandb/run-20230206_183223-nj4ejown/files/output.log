@@ -1,0 +1,806 @@
+{'train': <torch.utils.data.dataloader.DataLoader object at 0x7fee258345e0>, 'test': <torch.utils.data.dataloader.DataLoader object at 0x7fee258346d0>}
+__cfg_check_funcs__: []
+__help_info__: {}
+contrast_temp: 1.0
+contrast_topk: 100
+downstream_tasks: []
+dropout: 0.0
+embed_size: 8
+gamma: 0
+graph_pooling: mean
+hidden: 2048
+in_channels: 0
+input_shape: ()
+is_ready_for_run: False
+label_smoothing: 0.1
+lambda_: 0.1
+layer: 2
+length_penalty: 2.0
+max_answer_len: 30
+max_length: 200
+max_tree_depth: 3
+min_length: 1
+model_num_per_trainer: 1
+model_type: google/bert_uncased_L-2_H-128_A-2
+n_best_size: 20
+no_repeat_ngram_size: 3
+null_score_diff_threshold: 0.0
+num_beams: 5
+num_item: 0
+num_labels: 1
+num_of_trees: 10
+num_user: 0
+out_channels: 62
+pretrain_tasks: []
+stage:
+task: node
+type: convnet2
+use_bias: True
+use_contrastive_loss: False
+torch
+[tensor([[[[-2.1179, -2.1179, -2.1179,  ..., -2.1179, -2.1179, -2.1179],
+          [-2.1179, -2.1179, -2.1179,  ..., -2.1179, -2.1179, -2.1179],
+          [-2.1179, -2.1179, -2.1179,  ..., -2.1179, -2.1179, -2.1179],
+          ...,
+          [-2.1179, -2.1179, -2.1179,  ..., -2.1179, -2.1179, -2.1179],
+          [-2.1179, -2.1179, -2.1179,  ..., -2.1179, -2.1179, -2.1179],
+          [-2.1179, -2.1179, -2.1179,  ..., -2.1179, -2.1179, -2.1179]],
+         [[-2.0357, -2.0357, -2.0357,  ..., -2.0357, -2.0357, -2.0357],
+          [-2.0357, -2.0357, -2.0357,  ..., -2.0357, -2.0357, -2.0357],
+          [-2.0357, -2.0357, -2.0357,  ..., -2.0357, -2.0357, -2.0357],
+          ...,
+          [-2.0357, -2.0357, -2.0357,  ..., -2.0357, -2.0357, -2.0357],
+          [-2.0357, -2.0357, -2.0357,  ..., -2.0357, -2.0357, -2.0357],
+          [-2.0357, -2.0357, -2.0357,  ..., -2.0357, -2.0357, -2.0357]],
+         [[-1.8044, -1.8044, -1.8044,  ..., -1.8044, -1.8044, -1.8044],
+          [-1.8044, -1.8044, -1.8044,  ..., -1.8044, -1.8044, -1.8044],
+          [-1.8044, -1.8044, -1.8044,  ..., -1.8044, -1.8044, -1.8044],
+          ...,
+          [-1.8044, -1.8044, -1.8044,  ..., -1.8044, -1.8044, -1.8044],
+          [-1.8044, -1.8044, -1.8044,  ..., -1.8044, -1.8044, -1.8044],
+          [-1.8044, -1.8044, -1.8044,  ..., -1.8044, -1.8044, -1.8044]]]]), tensor([1])]
+{'train': <torch.utils.data.dataloader.DataLoader object at 0x7fee25834820>, 'test': <torch.utils.data.dataloader.DataLoader object at 0x7fee25834910>}
+__cfg_check_funcs__: []
+__help_info__: {}
+contrast_temp: 1.0
+contrast_topk: 100
+downstream_tasks: []
+dropout: 0.0
+embed_size: 8
+gamma: 0
+graph_pooling: mean
+hidden: 2048
+in_channels: 0
+input_shape: ()
+is_ready_for_run: False
+label_smoothing: 0.1
+lambda_: 0.1
+layer: 2
+length_penalty: 2.0
+max_answer_len: 30
+max_length: 200
+max_tree_depth: 3
+min_length: 1
+model_num_per_trainer: 1
+model_type: google/bert_uncased_L-2_H-128_A-2
+n_best_size: 20
+no_repeat_ngram_size: 3
+null_score_diff_threshold: 0.0
+num_beams: 5
+num_item: 0
+num_labels: 1
+num_of_trees: 10
+num_user: 0
+out_channels: 62
+pretrain_tasks: []
+stage:
+task: node
+type: convnet2
+use_bias: True
+use_contrastive_loss: False
+torch
+[tensor([[[[-2.1179, -2.1179, -2.1179,  ..., -2.1179, -2.1179, -2.1179],
+          [-2.1179, -2.1179, -2.1179,  ..., -2.1179, -2.1179, -2.1179],
+          [-2.1179, -2.1179, -2.1179,  ..., -2.1179, -2.1179, -2.1179],
+          ...,
+          [-2.1179, -2.1179, -2.1179,  ..., -2.1179, -2.1179, -2.1179],
+          [-2.1179, -2.1179, -2.1179,  ..., -2.1179, -2.1179, -2.1179],
+          [-2.1179, -2.1179, -2.1179,  ..., -2.1179, -2.1179, -2.1179]],
+         [[-2.0357, -2.0357, -2.0357,  ..., -2.0357, -2.0357, -2.0357],
+          [-2.0357, -2.0357, -2.0357,  ..., -2.0357, -2.0357, -2.0357],
+          [-2.0357, -2.0357, -2.0357,  ..., -2.0357, -2.0357, -2.0357],
+          ...,
+          [-2.0357, -2.0357, -2.0357,  ..., -2.0357, -2.0357, -2.0357],
+          [-2.0357, -2.0357, -2.0357,  ..., -2.0357, -2.0357, -2.0357],
+          [-2.0357, -2.0357, -2.0357,  ..., -2.0357, -2.0357, -2.0357]],
+         [[-1.8044, -1.8044, -1.8044,  ..., -1.8044, -1.8044, -1.8044],
+          [-1.8044, -1.8044, -1.8044,  ..., -1.8044, -1.8044, -1.8044],
+          [-1.8044, -1.8044, -1.8044,  ..., -1.8044, -1.8044, -1.8044],
+          ...,
+          [-1.8044, -1.8044, -1.8044,  ..., -1.8044, -1.8044, -1.8044],
+          [-1.8044, -1.8044, -1.8044,  ..., -1.8044, -1.8044, -1.8044],
+          [-1.8044, -1.8044, -1.8044,  ..., -1.8044, -1.8044, -1.8044]]]]), tensor([2])]
+{'train': <torch.utils.data.dataloader.DataLoader object at 0x7fee25834a30>, 'test': <torch.utils.data.dataloader.DataLoader object at 0x7fee25834b20>}
+__cfg_check_funcs__: []
+__help_info__: {}
+contrast_temp: 1.0
+contrast_topk: 100
+downstream_tasks: []
+dropout: 0.0
+embed_size: 8
+gamma: 0
+graph_pooling: mean
+hidden: 2048
+in_channels: 0
+input_shape: ()
+is_ready_for_run: False
+label_smoothing: 0.1
+lambda_: 0.1
+layer: 2
+length_penalty: 2.0
+max_answer_len: 30
+max_length: 200
+max_tree_depth: 3
+min_length: 1
+model_num_per_trainer: 1
+model_type: google/bert_uncased_L-2_H-128_A-2
+n_best_size: 20
+no_repeat_ngram_size: 3
+null_score_diff_threshold: 0.0
+num_beams: 5
+num_item: 0
+num_labels: 1
+num_of_trees: 10
+num_user: 0
+out_channels: 62
+pretrain_tasks: []
+stage:
+task: node
+type: convnet2
+use_bias: True
+use_contrastive_loss: False
+torch
+[tensor([[[[-2.1179, -2.1179, -2.1179,  ..., -2.1179, -2.1179, -2.1179],
+          [-2.1179, -2.1179, -2.1179,  ..., -2.1179, -2.1179, -2.1179],
+          [-2.1179, -2.1179, -2.1179,  ..., -2.1179, -2.1179, -2.1179],
+          ...,
+          [-2.1179, -2.1179, -2.1179,  ..., -2.1179, -2.1179, -2.1179],
+          [-2.1179, -2.1179, -2.1179,  ..., -2.1179, -2.1179, -2.1179],
+          [-2.1179, -2.1179, -2.1179,  ..., -2.1179, -2.1179, -2.1179]],
+         [[-2.0357, -2.0357, -2.0357,  ..., -2.0357, -2.0357, -2.0357],
+          [-2.0357, -2.0357, -2.0357,  ..., -2.0357, -2.0357, -2.0357],
+          [-2.0357, -2.0357, -2.0357,  ..., -2.0357, -2.0357, -2.0357],
+          ...,
+          [-2.0357, -2.0357, -2.0357,  ..., -2.0357, -2.0357, -2.0357],
+          [-2.0357, -2.0357, -2.0357,  ..., -2.0357, -2.0357, -2.0357],
+          [-2.0357, -2.0357, -2.0357,  ..., -2.0357, -2.0357, -2.0357]],
+         [[-1.8044, -1.8044, -1.8044,  ..., -1.8044, -1.8044, -1.8044],
+          [-1.8044, -1.8044, -1.8044,  ..., -1.8044, -1.8044, -1.8044],
+          [-1.8044, -1.8044, -1.8044,  ..., -1.8044, -1.8044, -1.8044],
+          ...,
+          [-1.8044, -1.8044, -1.8044,  ..., -1.8044, -1.8044, -1.8044],
+          [-1.8044, -1.8044, -1.8044,  ..., -1.8044, -1.8044, -1.8044],
+          [-1.8044, -1.8044, -1.8044,  ..., -1.8044, -1.8044, -1.8044]]]]), tensor([0])]
+{'train': <torch.utils.data.dataloader.DataLoader object at 0x7fee258345e0>, 'test': <torch.utils.data.dataloader.DataLoader object at 0x7fee258346d0>}
+__cfg_check_funcs__: []
+__help_info__: {}
+contrast_temp: 1.0
+contrast_topk: 100
+downstream_tasks: []
+dropout: 0.0
+embed_size: 8
+gamma: 0
+graph_pooling: mean
+hidden: 2048
+in_channels: 0
+input_shape: ()
+is_ready_for_run: False
+label_smoothing: 0.1
+lambda_: 0.1
+layer: 2
+length_penalty: 2.0
+max_answer_len: 30
+max_length: 200
+max_tree_depth: 3
+min_length: 1
+model_num_per_trainer: 1
+model_type: google/bert_uncased_L-2_H-128_A-2
+n_best_size: 20
+no_repeat_ngram_size: 3
+null_score_diff_threshold: 0.0
+num_beams: 5
+num_item: 0
+num_labels: 1
+num_of_trees: 10
+num_user: 0
+out_channels: 62
+pretrain_tasks: []
+stage:
+task: node
+type: convnet2
+use_bias: True
+use_contrastive_loss: False
+torch
+[tensor([[[[-2.1179, -2.1179, -2.1179,  ..., -2.1179, -2.1179, -2.1179],
+          [-2.1179, -2.1179, -2.1179,  ..., -2.1179, -2.1179, -2.1179],
+          [-2.1179, -2.1179, -2.1179,  ..., -2.1179, -2.1179, -2.1179],
+          ...,
+          [-2.1179, -2.1179, -2.1179,  ..., -2.1179, -2.1179, -2.1179],
+          [-2.1179, -2.1179, -2.1179,  ..., -2.1179, -2.1179, -2.1179],
+          [-2.1179, -2.1179, -2.1179,  ..., -2.1179, -2.1179, -2.1179]],
+         [[-2.0357, -2.0357, -2.0357,  ..., -2.0357, -2.0357, -2.0357],
+          [-2.0357, -2.0357, -2.0357,  ..., -2.0357, -2.0357, -2.0357],
+          [-2.0357, -2.0357, -2.0357,  ..., -2.0357, -2.0357, -2.0357],
+          ...,
+          [-2.0357, -2.0357, -2.0357,  ..., -2.0357, -2.0357, -2.0357],
+          [-2.0357, -2.0357, -2.0357,  ..., -2.0357, -2.0357, -2.0357],
+          [-2.0357, -2.0357, -2.0357,  ..., -2.0357, -2.0357, -2.0357]],
+         [[-1.8044, -1.8044, -1.8044,  ..., -1.8044, -1.8044, -1.8044],
+          [-1.8044, -1.8044, -1.8044,  ..., -1.8044, -1.8044, -1.8044],
+          [-1.8044, -1.8044, -1.8044,  ..., -1.8044, -1.8044, -1.8044],
+          ...,
+          [-1.8044, -1.8044, -1.8044,  ..., -1.8044, -1.8044, -1.8044],
+          [-1.8044, -1.8044, -1.8044,  ..., -1.8044, -1.8044, -1.8044],
+          [-1.8044, -1.8044, -1.8044,  ..., -1.8044, -1.8044, -1.8044]]]]), tensor([1])]
+{'train': <torch.utils.data.dataloader.DataLoader object at 0x7fee25834820>, 'test': <torch.utils.data.dataloader.DataLoader object at 0x7fee25834910>}
+__cfg_check_funcs__: []
+__help_info__: {}
+contrast_temp: 1.0
+contrast_topk: 100
+downstream_tasks: []
+dropout: 0.0
+embed_size: 8
+gamma: 0
+graph_pooling: mean
+hidden: 2048
+in_channels: 0
+input_shape: ()
+is_ready_for_run: False
+label_smoothing: 0.1
+lambda_: 0.1
+layer: 2
+length_penalty: 2.0
+max_answer_len: 30
+max_length: 200
+max_tree_depth: 3
+min_length: 1
+model_num_per_trainer: 1
+model_type: google/bert_uncased_L-2_H-128_A-2
+n_best_size: 20
+no_repeat_ngram_size: 3
+null_score_diff_threshold: 0.0
+num_beams: 5
+num_item: 0
+num_labels: 1
+num_of_trees: 10
+num_user: 0
+out_channels: 62
+pretrain_tasks: []
+stage:
+task: node
+type: convnet2
+use_bias: True
+use_contrastive_loss: False
+torch
+[tensor([[[[-2.1179, -2.1179, -2.1179,  ..., -2.1179, -2.1179, -2.1179],
+          [-2.1179, -2.1179, -2.1179,  ..., -2.1179, -2.1179, -2.1179],
+          [-2.1179, -2.1179, -2.1179,  ..., -2.1179, -2.1179, -2.1179],
+          ...,
+          [-2.1179, -2.1179, -2.1179,  ..., -2.1179, -2.1179, -2.1179],
+          [-2.1179, -2.1179, -2.1179,  ..., -2.1179, -2.1179, -2.1179],
+          [-2.1179, -2.1179, -2.1179,  ..., -2.1179, -2.1179, -2.1179]],
+         [[-2.0357, -2.0357, -2.0357,  ..., -2.0357, -2.0357, -2.0357],
+          [-2.0357, -2.0357, -2.0357,  ..., -2.0357, -2.0357, -2.0357],
+          [-2.0357, -2.0357, -2.0357,  ..., -2.0357, -2.0357, -2.0357],
+          ...,
+          [-2.0357, -2.0357, -2.0357,  ..., -2.0357, -2.0357, -2.0357],
+          [-2.0357, -2.0357, -2.0357,  ..., -2.0357, -2.0357, -2.0357],
+          [-2.0357, -2.0357, -2.0357,  ..., -2.0357, -2.0357, -2.0357]],
+         [[-1.8044, -1.8044, -1.8044,  ..., -1.8044, -1.8044, -1.8044],
+          [-1.8044, -1.8044, -1.8044,  ..., -1.8044, -1.8044, -1.8044],
+          [-1.8044, -1.8044, -1.8044,  ..., -1.8044, -1.8044, -1.8044],
+          ...,
+          [-1.8044, -1.8044, -1.8044,  ..., -1.8044, -1.8044, -1.8044],
+          [-1.8044, -1.8044, -1.8044,  ..., -1.8044, -1.8044, -1.8044],
+          [-1.8044, -1.8044, -1.8044,  ..., -1.8044, -1.8044, -1.8044]]]]), tensor([2])]
+{'train': <torch.utils.data.dataloader.DataLoader object at 0x7fee25834a30>, 'test': <torch.utils.data.dataloader.DataLoader object at 0x7fee25834b20>}
+__cfg_check_funcs__: []
+__help_info__: {}
+contrast_temp: 1.0
+contrast_topk: 100
+downstream_tasks: []
+dropout: 0.0
+embed_size: 8
+gamma: 0
+graph_pooling: mean
+hidden: 2048
+in_channels: 0
+input_shape: ()
+is_ready_for_run: False
+label_smoothing: 0.1
+lambda_: 0.1
+layer: 2
+length_penalty: 2.0
+max_answer_len: 30
+max_length: 200
+max_tree_depth: 3
+min_length: 1
+model_num_per_trainer: 1
+model_type: google/bert_uncased_L-2_H-128_A-2
+n_best_size: 20
+no_repeat_ngram_size: 3
+null_score_diff_threshold: 0.0
+num_beams: 5
+num_item: 0
+num_labels: 1
+num_of_trees: 10
+num_user: 0
+out_channels: 62
+pretrain_tasks: []
+stage:
+task: node
+type: convnet2
+use_bias: True
+use_contrastive_loss: False
+torch
+[tensor([[[[-2.1179, -2.1179, -2.1179,  ..., -2.1179, -2.1179, -2.1179],
+          [-2.1179, -2.1179, -2.1179,  ..., -2.1179, -2.1179, -2.1179],
+          [-2.1179, -2.1179, -2.1179,  ..., -2.1179, -2.1179, -2.1179],
+          ...,
+          [-2.1179, -2.1179, -2.1179,  ..., -2.1179, -2.1179, -2.1179],
+          [-2.1179, -2.1179, -2.1179,  ..., -2.1179, -2.1179, -2.1179],
+          [-2.1179, -2.1179, -2.1179,  ..., -2.1179, -2.1179, -2.1179]],
+         [[-2.0357, -2.0357, -2.0357,  ..., -2.0357, -2.0357, -2.0357],
+          [-2.0357, -2.0357, -2.0357,  ..., -2.0357, -2.0357, -2.0357],
+          [-2.0357, -2.0357, -2.0357,  ..., -2.0357, -2.0357, -2.0357],
+          ...,
+          [-2.0357, -2.0357, -2.0357,  ..., -2.0357, -2.0357, -2.0357],
+          [-2.0357, -2.0357, -2.0357,  ..., -2.0357, -2.0357, -2.0357],
+          [-2.0357, -2.0357, -2.0357,  ..., -2.0357, -2.0357, -2.0357]],
+         [[-1.8044, -1.8044, -1.8044,  ..., -1.8044, -1.8044, -1.8044],
+          [-1.8044, -1.8044, -1.8044,  ..., -1.8044, -1.8044, -1.8044],
+          [-1.8044, -1.8044, -1.8044,  ..., -1.8044, -1.8044, -1.8044],
+          ...,
+          [-1.8044, -1.8044, -1.8044,  ..., -1.8044, -1.8044, -1.8044],
+          [-1.8044, -1.8044, -1.8044,  ..., -1.8044, -1.8044, -1.8044],
+          [-1.8044, -1.8044, -1.8044,  ..., -1.8044, -1.8044, -1.8044]]]]), tensor([0])]
+{'train': <torch.utils.data.dataloader.DataLoader object at 0x7fee25834c40>, 'test': <torch.utils.data.dataloader.DataLoader object at 0x7fee25834d30>}
+__cfg_check_funcs__: []
+__help_info__: {}
+contrast_temp: 1.0
+contrast_topk: 100
+downstream_tasks: []
+dropout: 0.0
+embed_size: 8
+gamma: 0
+graph_pooling: mean
+hidden: 2048
+in_channels: 0
+input_shape: ()
+is_ready_for_run: False
+label_smoothing: 0.1
+lambda_: 0.1
+layer: 2
+length_penalty: 2.0
+max_answer_len: 30
+max_length: 200
+max_tree_depth: 3
+min_length: 1
+model_num_per_trainer: 1
+model_type: google/bert_uncased_L-2_H-128_A-2
+n_best_size: 20
+no_repeat_ngram_size: 3
+null_score_diff_threshold: 0.0
+num_beams: 5
+num_item: 0
+num_labels: 1
+num_of_trees: 10
+num_user: 0
+out_channels: 62
+pretrain_tasks: []
+stage:
+task: node
+type: convnet2
+use_bias: True
+use_contrastive_loss: False
+torch
+[tensor([[[[-2.1179, -2.1179, -1.9638,  ..., -2.1179, -2.1179, -2.1179],
+          [-2.1179, -2.1179, -1.9295,  ..., -2.1179, -2.1179, -2.1179],
+          [-2.1179, -2.1179, -1.9295,  ..., -1.9295, -1.9295, -1.9467],
+          ...,
+          [-1.9467, -1.9295, -1.9295,  ..., -1.9295, -2.1179, -2.1179],
+          [-2.1179, -2.1179, -2.1179,  ..., -1.9295, -2.1179, -2.1179],
+          [-2.1179, -2.1179, -2.1179,  ..., -1.9638, -2.1179, -2.1179]],
+         [[-2.0357, -2.0357, -1.8782,  ..., -2.0357, -2.0357, -2.0357],
+          [-2.0357, -2.0357, -1.8431,  ..., -2.0357, -2.0357, -2.0357],
+          [-2.0357, -2.0357, -1.8431,  ..., -1.8431, -1.8431, -1.8606],
+          ...,
+          [-1.8606, -1.8431, -1.8431,  ..., -1.8431, -2.0357, -2.0357],
+          [-2.0357, -2.0357, -2.0357,  ..., -1.8431, -2.0357, -2.0357],
+          [-2.0357, -2.0357, -2.0357,  ..., -1.8782, -2.0357, -2.0357]],
+         [[-1.8044, -1.8044, -1.6476,  ..., -1.8044, -1.8044, -1.8044],
+          [-1.8044, -1.8044, -1.6127,  ..., -1.8044, -1.8044, -1.8044],
+          [-1.8044, -1.8044, -1.6127,  ..., -1.6127, -1.6127, -1.6302],
+          ...,
+          [-1.6302, -1.6127, -1.6127,  ..., -1.6127, -1.8044, -1.8044],
+          [-1.8044, -1.8044, -1.8044,  ..., -1.6127, -1.8044, -1.8044],
+          [-1.8044, -1.8044, -1.8044,  ..., -1.6476, -1.8044, -1.8044]]]]), tensor([2])]
+{'train': <torch.utils.data.dataloader.DataLoader object at 0x7fee25834e50>, 'test': <torch.utils.data.dataloader.DataLoader object at 0x7fee25834f40>}
+__cfg_check_funcs__: []
+__help_info__: {}
+contrast_temp: 1.0
+contrast_topk: 100
+downstream_tasks: []
+dropout: 0.0
+embed_size: 8
+gamma: 0
+graph_pooling: mean
+hidden: 2048
+in_channels: 0
+input_shape: ()
+is_ready_for_run: False
+label_smoothing: 0.1
+lambda_: 0.1
+layer: 2
+length_penalty: 2.0
+max_answer_len: 30
+max_length: 200
+max_tree_depth: 3
+min_length: 1
+model_num_per_trainer: 1
+model_type: google/bert_uncased_L-2_H-128_A-2
+n_best_size: 20
+no_repeat_ngram_size: 3
+null_score_diff_threshold: 0.0
+num_beams: 5
+num_item: 0
+num_labels: 1
+num_of_trees: 10
+num_user: 0
+out_channels: 62
+pretrain_tasks: []
+stage:
+task: node
+type: convnet2
+use_bias: True
+use_contrastive_loss: False
+torch
+[tensor([[[[-2.1179, -2.1179, -2.1179,  ..., -2.1179, -2.1179, -2.1179],
+          [-2.1179, -2.1179, -2.1179,  ..., -2.1179, -2.1179, -2.1179],
+          [-2.1179, -2.1179, -2.1179,  ..., -2.1179, -2.1179, -2.1179],
+          ...,
+          [-2.1179, -2.1179, -2.1179,  ..., -2.1179, -2.1179, -2.1179],
+          [-2.1179, -2.1179, -2.1179,  ..., -2.1179, -2.1179, -2.1179],
+          [-2.1179, -2.1179, -2.1179,  ..., -2.1179, -2.1179, -2.1179]],
+         [[-2.0357, -2.0357, -2.0357,  ..., -2.0357, -2.0357, -2.0357],
+          [-2.0357, -2.0357, -2.0357,  ..., -2.0357, -2.0357, -2.0357],
+          [-2.0357, -2.0357, -2.0357,  ..., -2.0357, -2.0357, -2.0357],
+          ...,
+          [-2.0357, -2.0357, -2.0357,  ..., -2.0357, -2.0357, -2.0357],
+          [-2.0357, -2.0357, -2.0357,  ..., -2.0357, -2.0357, -2.0357],
+          [-2.0357, -2.0357, -2.0357,  ..., -2.0357, -2.0357, -2.0357]],
+         [[-1.8044, -1.8044, -1.8044,  ..., -1.8044, -1.8044, -1.8044],
+          [-1.8044, -1.8044, -1.8044,  ..., -1.8044, -1.8044, -1.8044],
+          [-1.8044, -1.8044, -1.8044,  ..., -1.8044, -1.8044, -1.8044],
+          ...,
+          [-1.8044, -1.8044, -1.8044,  ..., -1.8044, -1.8044, -1.8044],
+          [-1.8044, -1.8044, -1.8044,  ..., -1.8044, -1.8044, -1.8044],
+          [-1.8044, -1.8044, -1.8044,  ..., -1.8044, -1.8044, -1.8044]]]]), tensor([2])]
+{'train': <torch.utils.data.dataloader.DataLoader object at 0x7fee258940a0>, 'test': <torch.utils.data.dataloader.DataLoader object at 0x7fee25894190>}
+__cfg_check_funcs__: []
+__help_info__: {}
+contrast_temp: 1.0
+contrast_topk: 100
+downstream_tasks: []
+dropout: 0.0
+embed_size: 8
+gamma: 0
+graph_pooling: mean
+hidden: 2048
+in_channels: 0
+input_shape: ()
+is_ready_for_run: False
+label_smoothing: 0.1
+lambda_: 0.1
+layer: 2
+length_penalty: 2.0
+max_answer_len: 30
+max_length: 200
+max_tree_depth: 3
+min_length: 1
+model_num_per_trainer: 1
+model_type: google/bert_uncased_L-2_H-128_A-2
+n_best_size: 20
+no_repeat_ngram_size: 3
+null_score_diff_threshold: 0.0
+num_beams: 5
+num_item: 0
+num_labels: 1
+num_of_trees: 10
+num_user: 0
+out_channels: 62
+pretrain_tasks: []
+stage:
+task: node
+type: convnet2
+use_bias: True
+use_contrastive_loss: False
+torch
+[tensor([[[[-2.1179, -2.1179, -2.1179,  ..., -2.1179, -2.1179, -2.1179],
+          [-2.1179, -2.1179, -2.1179,  ..., -2.1179, -2.1179, -2.1179],
+          [-2.1179, -2.1179, -2.1179,  ..., -2.1179, -2.1179, -2.1179],
+          ...,
+          [-2.1179, -2.1179, -2.1179,  ..., -2.1179, -2.1179, -2.1179],
+          [-2.1179, -2.1179, -2.1179,  ..., -2.1179, -2.1179, -2.1179],
+          [-2.1179, -2.1179, -2.1179,  ..., -2.1179, -2.1179, -2.1179]],
+         [[-2.0357, -2.0357, -2.0357,  ..., -2.0357, -2.0357, -2.0357],
+          [-2.0357, -2.0357, -2.0357,  ..., -2.0357, -2.0357, -2.0357],
+          [-2.0357, -2.0357, -2.0357,  ..., -2.0357, -2.0357, -2.0357],
+          ...,
+          [-2.0357, -2.0357, -2.0357,  ..., -2.0357, -2.0357, -2.0357],
+          [-2.0357, -2.0357, -2.0357,  ..., -2.0357, -2.0357, -2.0357],
+          [-2.0357, -2.0357, -2.0357,  ..., -2.0357, -2.0357, -2.0357]],
+         [[-1.8044, -1.8044, -1.8044,  ..., -1.8044, -1.8044, -1.8044],
+          [-1.8044, -1.8044, -1.8044,  ..., -1.8044, -1.8044, -1.8044],
+          [-1.8044, -1.8044, -1.8044,  ..., -1.8044, -1.8044, -1.8044],
+          ...,
+          [-1.8044, -1.8044, -1.8044,  ..., -1.8044, -1.8044, -1.8044],
+          [-1.8044, -1.8044, -1.8044,  ..., -1.8044, -1.8044, -1.8044],
+          [-1.8044, -1.8044, -1.8044,  ..., -1.8044, -1.8044, -1.8044]]]]), tensor([1])]
+{'train': <torch.utils.data.dataloader.DataLoader object at 0x7fee25834c40>, 'test': <torch.utils.data.dataloader.DataLoader object at 0x7fee25834d30>}
+__cfg_check_funcs__: []
+__help_info__: {}
+contrast_temp: 1.0
+contrast_topk: 100
+downstream_tasks: []
+dropout: 0.0
+embed_size: 8
+gamma: 0
+graph_pooling: mean
+hidden: 2048
+in_channels: 0
+input_shape: ()
+is_ready_for_run: False
+label_smoothing: 0.1
+lambda_: 0.1
+layer: 2
+length_penalty: 2.0
+max_answer_len: 30
+max_length: 200
+max_tree_depth: 3
+min_length: 1
+model_num_per_trainer: 1
+model_type: google/bert_uncased_L-2_H-128_A-2
+n_best_size: 20
+no_repeat_ngram_size: 3
+null_score_diff_threshold: 0.0
+num_beams: 5
+num_item: 0
+num_labels: 1
+num_of_trees: 10
+num_user: 0
+out_channels: 62
+pretrain_tasks: []
+stage:
+task: node
+type: convnet2
+use_bias: True
+use_contrastive_loss: False
+torch
+[tensor([[[[-2.1179, -2.1179, -1.9638,  ..., -2.1179, -2.1179, -2.1179],
+          [-2.1179, -2.1179, -1.9295,  ..., -2.1179, -2.1179, -2.1179],
+          [-2.1179, -2.1179, -1.9295,  ..., -1.9295, -1.9295, -1.9467],
+          ...,
+          [-1.9467, -1.9295, -1.9295,  ..., -1.9295, -2.1179, -2.1179],
+          [-2.1179, -2.1179, -2.1179,  ..., -1.9295, -2.1179, -2.1179],
+          [-2.1179, -2.1179, -2.1179,  ..., -1.9638, -2.1179, -2.1179]],
+         [[-2.0357, -2.0357, -1.8782,  ..., -2.0357, -2.0357, -2.0357],
+          [-2.0357, -2.0357, -1.8431,  ..., -2.0357, -2.0357, -2.0357],
+          [-2.0357, -2.0357, -1.8431,  ..., -1.8431, -1.8431, -1.8606],
+          ...,
+          [-1.8606, -1.8431, -1.8431,  ..., -1.8431, -2.0357, -2.0357],
+          [-2.0357, -2.0357, -2.0357,  ..., -1.8431, -2.0357, -2.0357],
+          [-2.0357, -2.0357, -2.0357,  ..., -1.8782, -2.0357, -2.0357]],
+         [[-1.8044, -1.8044, -1.6476,  ..., -1.8044, -1.8044, -1.8044],
+          [-1.8044, -1.8044, -1.6127,  ..., -1.8044, -1.8044, -1.8044],
+          [-1.8044, -1.8044, -1.6127,  ..., -1.6127, -1.6127, -1.6302],
+          ...,
+          [-1.6302, -1.6127, -1.6127,  ..., -1.6127, -1.8044, -1.8044],
+          [-1.8044, -1.8044, -1.8044,  ..., -1.6127, -1.8044, -1.8044],
+          [-1.8044, -1.8044, -1.8044,  ..., -1.6476, -1.8044, -1.8044]]]]), tensor([2])]
+{'train': <torch.utils.data.dataloader.DataLoader object at 0x7fee25834e50>, 'test': <torch.utils.data.dataloader.DataLoader object at 0x7fee25834f40>}
+__cfg_check_funcs__: []
+__help_info__: {}
+contrast_temp: 1.0
+contrast_topk: 100
+downstream_tasks: []
+dropout: 0.0
+embed_size: 8
+gamma: 0
+graph_pooling: mean
+hidden: 2048
+in_channels: 0
+input_shape: ()
+is_ready_for_run: False
+label_smoothing: 0.1
+lambda_: 0.1
+layer: 2
+length_penalty: 2.0
+max_answer_len: 30
+max_length: 200
+max_tree_depth: 3
+min_length: 1
+model_num_per_trainer: 1
+model_type: google/bert_uncased_L-2_H-128_A-2
+n_best_size: 20
+no_repeat_ngram_size: 3
+null_score_diff_threshold: 0.0
+num_beams: 5
+num_item: 0
+num_labels: 1
+num_of_trees: 10
+num_user: 0
+out_channels: 62
+pretrain_tasks: []
+stage:
+task: node
+type: convnet2
+use_bias: True
+use_contrastive_loss: False
+torch
+[tensor([[[[-2.1179, -2.1179, -2.1179,  ..., -2.1179, -2.1179, -2.1179],
+          [-2.1179, -2.1179, -2.1179,  ..., -2.1179, -2.1179, -2.1179],
+          [-2.1179, -2.1179, -2.1179,  ..., -2.1179, -2.1179, -2.1179],
+          ...,
+          [-2.1179, -2.1179, -2.1179,  ..., -2.1179, -2.1179, -2.1179],
+          [-2.1179, -2.1179, -2.1179,  ..., -2.1179, -2.1179, -2.1179],
+          [-2.1179, -2.1179, -2.1179,  ..., -2.1179, -2.1179, -2.1179]],
+         [[-2.0357, -2.0357, -2.0357,  ..., -2.0357, -2.0357, -2.0357],
+          [-2.0357, -2.0357, -2.0357,  ..., -2.0357, -2.0357, -2.0357],
+          [-2.0357, -2.0357, -2.0357,  ..., -2.0357, -2.0357, -2.0357],
+          ...,
+          [-2.0357, -2.0357, -2.0357,  ..., -2.0357, -2.0357, -2.0357],
+          [-2.0357, -2.0357, -2.0357,  ..., -2.0357, -2.0357, -2.0357],
+          [-2.0357, -2.0357, -2.0357,  ..., -2.0357, -2.0357, -2.0357]],
+         [[-1.8044, -1.8044, -1.8044,  ..., -1.8044, -1.8044, -1.8044],
+          [-1.8044, -1.8044, -1.8044,  ..., -1.8044, -1.8044, -1.8044],
+          [-1.8044, -1.8044, -1.8044,  ..., -1.8044, -1.8044, -1.8044],
+          ...,
+          [-1.8044, -1.8044, -1.8044,  ..., -1.8044, -1.8044, -1.8044],
+          [-1.8044, -1.8044, -1.8044,  ..., -1.8044, -1.8044, -1.8044],
+          [-1.8044, -1.8044, -1.8044,  ..., -1.8044, -1.8044, -1.8044]]]]), tensor([2])]
+{'train': <torch.utils.data.dataloader.DataLoader object at 0x7fee258940a0>, 'test': <torch.utils.data.dataloader.DataLoader object at 0x7fee25894190>}
+__cfg_check_funcs__: []
+__help_info__: {}
+contrast_temp: 1.0
+contrast_topk: 100
+downstream_tasks: []
+dropout: 0.0
+embed_size: 8
+gamma: 0
+graph_pooling: mean
+hidden: 2048
+in_channels: 0
+input_shape: ()
+is_ready_for_run: False
+label_smoothing: 0.1
+lambda_: 0.1
+layer: 2
+length_penalty: 2.0
+max_answer_len: 30
+max_length: 200
+max_tree_depth: 3
+min_length: 1
+model_num_per_trainer: 1
+model_type: google/bert_uncased_L-2_H-128_A-2
+n_best_size: 20
+no_repeat_ngram_size: 3
+null_score_diff_threshold: 0.0
+num_beams: 5
+num_item: 0
+num_labels: 1
+num_of_trees: 10
+num_user: 0
+out_channels: 62
+pretrain_tasks: []
+stage:
+task: node
+type: convnet2
+use_bias: True
+use_contrastive_loss: False
+torch
+[tensor([[[[-2.1179, -2.1179, -2.1179,  ..., -2.1179, -2.1179, -2.1179],
+          [-2.1179, -2.1179, -2.1179,  ..., -2.1179, -2.1179, -2.1179],
+          [-2.1179, -2.1179, -2.1179,  ..., -2.1179, -2.1179, -2.1179],
+          ...,
+          [-2.1179, -2.1179, -2.1179,  ..., -2.1179, -2.1179, -2.1179],
+          [-2.1179, -2.1179, -2.1179,  ..., -2.1179, -2.1179, -2.1179],
+          [-2.1179, -2.1179, -2.1179,  ..., -2.1179, -2.1179, -2.1179]],
+         [[-2.0357, -2.0357, -2.0357,  ..., -2.0357, -2.0357, -2.0357],
+          [-2.0357, -2.0357, -2.0357,  ..., -2.0357, -2.0357, -2.0357],
+          [-2.0357, -2.0357, -2.0357,  ..., -2.0357, -2.0357, -2.0357],
+          ...,
+          [-2.0357, -2.0357, -2.0357,  ..., -2.0357, -2.0357, -2.0357],
+          [-2.0357, -2.0357, -2.0357,  ..., -2.0357, -2.0357, -2.0357],
+          [-2.0357, -2.0357, -2.0357,  ..., -2.0357, -2.0357, -2.0357]],
+         [[-1.8044, -1.8044, -1.8044,  ..., -1.8044, -1.8044, -1.8044],
+          [-1.8044, -1.8044, -1.8044,  ..., -1.8044, -1.8044, -1.8044],
+          [-1.8044, -1.8044, -1.8044,  ..., -1.8044, -1.8044, -1.8044],
+          ...,
+          [-1.8044, -1.8044, -1.8044,  ..., -1.8044, -1.8044, -1.8044],
+          [-1.8044, -1.8044, -1.8044,  ..., -1.8044, -1.8044, -1.8044],
+          [-1.8044, -1.8044, -1.8044,  ..., -1.8044, -1.8044, -1.8044]]]]), tensor([1])]
+Unsupported operator aten::max_pool2d encountered 2 time(s)
+Unsupported operator aten::max_pool2d encountered 2 time(s)
+Unsupported operator aten::max_pool2d encountered 2 time(s)
+Unsupported operator aten::max_pool2d encountered 2 time(s)
+Unsupported operator aten::max_pool2d encountered 2 time(s)
+Unsupported operator aten::max_pool2d encountered 2 time(s)
+Unsupported operator aten::max_pool2d encountered 2 time(s)
+Unsupported operator aten::max_pool2d encountered 2 time(s)
+Unsupported operator aten::max_pool2d encountered 2 time(s)
+Unsupported operator aten::max_pool2d encountered 2 time(s)
+/root/miniconda3/envs/fs/lib/python3.9/site-packages/numpy/core/fromnumeric.py:3474: RuntimeWarning: Mean of empty slice.
+  return _methods._mean(a, axis=axis, dtype=dtype,
+/root/miniconda3/envs/fs/lib/python3.9/site-packages/numpy/core/_methods.py:189: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Traceback (most recent call last):
+  File "/home/ubuntu/medscale/medscale/main.py", line 57, in <module>
+    _ = runner.run()
+  File "/home/ubuntu/medscale/medscale/core/fed_runner.py", line 389, in run
+    self._run_simulation()
+  File "/home/ubuntu/medscale/medscale/core/fed_runner.py", line 484, in _run_simulation
+    self._handle_msg(msg)
+  File "/home/ubuntu/medscale/medscale/core/fed_runner.py", line 410, in _handle_msg
+    self.server.msg_handlers[msg.msg_type](msg)
+  File "/home/ubuntu/medscale/medscale/core/workers/server.py", line 1003, in callback_funcs_for_metrics
+    return self.check_and_move_on(check_eval_result=True)
+  File "/home/ubuntu/medscale/medscale/core/workers/server.py", line 353, in check_and_move_on
+    self._merge_and_format_eval_results()
+  File "/home/ubuntu/medscale/medscale/core/workers/server.py", line 498, in _merge_and_format_eval_results
+    self.merge_eval_results_from_all_clients()
+  File "/home/ubuntu/medscale/medscale/core/workers/server.py", line 597, in merge_eval_results_from_all_clients
+    self._monitor.save_formatted_results(formatted_logs)
+  File "/home/ubuntu/medscale/medscale/core/monitors/monitor.py", line 285, in save_formatted_results
+    exp_stop_normal, log_res = logline_2_wandb_dict(
+  File "/home/ubuntu/medscale/medscale/core/auxiliaries/logging.py", line 225, in logline_2_wandb_dict
+    res = json.loads(s=res)
+  File "/root/miniconda3/envs/fs/lib/python3.9/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/root/miniconda3/envs/fs/lib/python3.9/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/root/miniconda3/envs/fs/lib/python3.9/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 680 (char 679)
+/root/miniconda3/envs/fs/lib/python3.9/site-packages/numpy/core/fromnumeric.py:3474: RuntimeWarning: Mean of empty slice.
+  return _methods._mean(a, axis=axis, dtype=dtype,
+/root/miniconda3/envs/fs/lib/python3.9/site-packages/numpy/core/_methods.py:189: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Traceback (most recent call last):
+  File "/home/ubuntu/medscale/medscale/main.py", line 57, in <module>
+    _ = runner.run()
+  File "/home/ubuntu/medscale/medscale/core/fed_runner.py", line 389, in run
+    self._run_simulation()
+  File "/home/ubuntu/medscale/medscale/core/fed_runner.py", line 484, in _run_simulation
+    self._handle_msg(msg)
+  File "/home/ubuntu/medscale/medscale/core/fed_runner.py", line 410, in _handle_msg
+    self.server.msg_handlers[msg.msg_type](msg)
+  File "/home/ubuntu/medscale/medscale/core/workers/server.py", line 1003, in callback_funcs_for_metrics
+    return self.check_and_move_on(check_eval_result=True)
+  File "/home/ubuntu/medscale/medscale/core/workers/server.py", line 353, in check_and_move_on
+    self._merge_and_format_eval_results()
+  File "/home/ubuntu/medscale/medscale/core/workers/server.py", line 498, in _merge_and_format_eval_results
+    self.merge_eval_results_from_all_clients()
+  File "/home/ubuntu/medscale/medscale/core/workers/server.py", line 597, in merge_eval_results_from_all_clients
+    self._monitor.save_formatted_results(formatted_logs)
+  File "/home/ubuntu/medscale/medscale/core/monitors/monitor.py", line 285, in save_formatted_results
+    exp_stop_normal, log_res = logline_2_wandb_dict(
+  File "/home/ubuntu/medscale/medscale/core/auxiliaries/logging.py", line 225, in logline_2_wandb_dict
+    res = json.loads(s=res)
+  File "/root/miniconda3/envs/fs/lib/python3.9/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/root/miniconda3/envs/fs/lib/python3.9/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/root/miniconda3/envs/fs/lib/python3.9/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 680 (char 679)
