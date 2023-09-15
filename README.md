@@ -5,20 +5,19 @@
  
 ![](https://img.shields.io/badge/language-python-blue.svg)
 ![](https://img.shields.io/badge/license-Apache-000000.svg)
-<!-- [![Website](https://img.shields.io/badge/website-MedScale-0000FF)](https://medscale.me/) -->
  
 FedVit is a transformer based model for research!| 
 
-## Quick Start for Medscale🚀
+## Quick Start 🚀
 
-We provide an end-to-end example for users to start running a medical course with Medscale.
+We provide an end-to-end example for users to start running a medical vit!.
 
 ### Step 1. Installation📚
 
-First of all, users need to clone the source code and install the required packages (we suggest python version >= 3.9). You can choose between the following two installation methods (via docker or conda) to install Medscale.
+First of all, users need to clone the source code and install the required packages (we suggest python version >= 3.9). 
 
 ```bash
-git clone https://github.com/erfandarzi/medscale.git
+git clone https://github.com/erfandarzi/Vit_FL.git
 
 
 cd medscale
@@ -29,8 +28,8 @@ cd medscale
 We recommend using a new virtual environment to install Medscale:
 
 ```bash
-conda create -n fedVIT python=3.9
-conda activate fedVIT
+conda create -n Vit_FL python=3.9
+conda activate Vit_FL
 ```
 
 If your backend is torch, please install torch in advance ([torch-get-started](https://pytorch.org/get-started/locally/)). For example, if your cuda version is 11.3 please execute the following command:
