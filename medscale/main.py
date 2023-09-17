@@ -16,10 +16,25 @@ from medscale.core.auxiliaries.worker_builder import get_client_cls, \
 from medscale.core.configs.config import global_cfg, CfgNode
 from medscale.core.auxiliaries.runner_builder import get_runner
 
+import sys
+import os
+
+def trace_calls(frame, event, arg):
+    if event != "call":
+        return
+    co = frame.f_code
+    func_name = co.co_name
+    func_filename = co.co_filename
+    # Filter based on directory or project-specific filename conventions
+    if '/home/ubuntu/FL-vit/' in func_filename:  # Modify this path to suit your actual directory structure
+        print(f"Call to {func_name} in {func_filename}")
+    return
+
 if os.environ.get('https_proxy'):
     del os.environ['https_proxy']
 if os.environ.get('http_proxy'):
     del os.environ['http_proxy']
+sys.settrace(trace_calls)
 
 if __name__ == '__main__':
     init_cfg = global_cfg.clone()
