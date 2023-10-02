@@ -68,14 +68,13 @@ To run a federated learning example with `FedOPT` algorithm, for unbalanced data
 
 python medscale/main.py --cfg scripts/my_configs/FedOPT_Lung_cancer.yaml
 
-
 ```
 All adjustable parameters can be found in the second cell. Careful with the `BATCH_SIZE`, as we are using it to parallelize head and time chunk calculations.
 
 For a personalized , improved method you can run:
 ```bash 
 python medscale/main.py --cfg scripts/my_configs/pfedme_lung_cancer.yaml
-
+```
 
 
 
