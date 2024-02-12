@@ -24,7 +24,6 @@ cd Vit_FL
 #### Use Conda
 
 We recommend using a new virtual environment to install Medscale:
-https://drive.google.com/file/d/1IC21Fp_z7WgQVVRlZ6a7c9zQpozEv90D/view?usp=sharing
 ```bash
 conda create -n Vit_FL python=3.9
 conda activate Vit_FL
