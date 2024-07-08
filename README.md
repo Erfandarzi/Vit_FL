@@ -6,7 +6,7 @@
 ![](https://img.shields.io/badge/language-python-blue.svg)
 ![](https://img.shields.io/badge/license-Apache-000000.svg)
  
-FedVit is a transformer based model for research!| 
+FedVit is a transformer based pipeline for federated learning research!
 
 ## Quick Start 🚀
 
