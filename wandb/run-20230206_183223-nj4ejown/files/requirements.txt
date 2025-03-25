@@ -37,7 +37,7 @@ google-auth-oauthlib==0.4.6
 google-auth==2.16.0
 google-pasta==0.2.0
 grpcio-tools==1.48.2
-grpcio==1.51.1
+grpcio==1.58.3
 h5py==3.1.0
 identify==2.5.13
 idna==3.4
