@@ -24,7 +24,7 @@ distlib==0.3.6
 docker-pycreds==0.4.0
 exceptiongroup==1.1.0
 medscale==0.2.1
-filelock==3.9.0
+filelock==3.20.1
 flask==2.2.2
 flatbuffers==2.0
 fonttools==4.38.0
@@ -115,7 +115,7 @@ text-unidecode==1.3
 threadpoolctl==3.1.0
 toml==0.10.2
 tomli==2.0.1
-torch==1.10.1
+torch==2.2.0
 torchaudio==0.10.1
 torchtext==0.11.1
 torchvision==0.11.2
