@@ -1,5 +1,5 @@
 absl-py==1.4.0
-aiohttp==3.8.3
+aiohttp==3.12.14
 aiosignal==1.2.0
 appdirs==1.4.4
 astunparse==1.6.3
@@ -76,7 +76,7 @@ platformdirs==2.6.2
 pluggy==1.0.0
 portalocker==2.7.0
 pre-commit==2.21.0
-protobuf==3.20.3
+protobuf==4.25.8
 psutil==5.9.4
 pyasn1-modules==0.2.8
 pyasn1==0.4.8
@@ -123,7 +123,7 @@ tqdm==4.64.1
 typing-extensions==4.4.0
 ujson==5.4.0
 ukkonen==1.0.1
-urllib3==1.26.14
+urllib3==2.5.0
 virtualenv==20.17.1
 wandb==0.13.9
 werkzeug==2.2.2
