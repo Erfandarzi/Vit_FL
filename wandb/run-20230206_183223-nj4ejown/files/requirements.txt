@@ -123,7 +123,7 @@ tqdm==4.64.1
 typing-extensions==4.4.0
 ujson==5.4.0
 ukkonen==1.0.1
-urllib3==1.26.14
+urllib3==2.6.0
 virtualenv==20.17.1
 wandb==0.13.9
 werkzeug==2.2.2
